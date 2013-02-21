@@ -8,4 +8,5 @@ You must give path of a .txt file as command line argument which is the source f
 Modifications made to original source so far:
 
 1) TextRank.java main method. All command line arguments changed to hardcoded ones except source file.
+2) Added Main.java file. input is a path taken from console. recursively traverses the directory structure represented by the path. all txt files found are sent to textrank algorithm
  
