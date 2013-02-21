@@ -1,0 +1,661 @@
+Buildfile: /home/lekha/dls/joshjdevl-textrank-ab5afac/build.xml
+
+clean:
+   [delete] Deleting directory /home/lekha/dls/joshjdevl-textrank-ab5afac/classes
+
+compile:
+    [mkdir] Created dir: /home/lekha/dls/joshjdevl-textrank-ab5afac/classes
+    [javac] /home/lekha/dls/joshjdevl-textrank-ab5afac/build.xml:121: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 14 source files to /home/lekha/dls/joshjdevl-textrank-ab5afac/classes
+
+run:
+     [java] MessageLog.java:62 Installing dictionary net.didion.jwnl.dictionary.FileBackedDictionary@321fc493
+     [java] TextRank.java:378 ELAPSED_TIME:	6263	construct_graph
+     [java] Graph.java:144 iteration: 0 error: 0.046105686079630843
+     [java] Graph.java:144 iteration: 1 error: 0.017953791089399342
+     [java] Graph.java:144 iteration: 2 error: 0.009302330095136029
+     [java] Graph.java:144 iteration: 3 error: 0.005015381102828361
+     [java] Graph.java:144 iteration: 4 error: 0.003540104898546975
+     [java] TextRank.java:378 ELAPSED_TIME:	126	basic_textrank
+     [java] TextRank.java:219 TEXT_BYTES:	0
+     [java] TextRank.java:220 GRAPH_SIZE:	1472
+     [java] TextRank.java:378 ELAPSED_TIME:	12	augment_graph
+     [java] Graph.java:144 iteration: 0 error: 0.25724526065766073
+     [java] Graph.java:144 iteration: 1 error: 0.1813294557128436
+     [java] Graph.java:144 iteration: 2 error: 0.03494203719548404
+     [java] Graph.java:144 iteration: 3 error: 0.041962312242105816
+     [java] Graph.java:144 iteration: 4 error: 0.006538313004561442
+     [java] Graph.java:144 iteration: 5 error: 0.013412736576438369
+     [java] Graph.java:144 iteration: 6 error: 0.005039907084481352
+     [java] Graph.java:144 iteration: 7 error: 0.006060520914265604
+     [java] Graph.java:144 iteration: 8 error: 0.0037256539087654385
+     [java] TextRank.java:378 ELAPSED_TIME:	65	ngram_textrank
+     [java] TextRank.java:378 ELAPSED_TIME:	94	normalize_ranks
+     [java] TextRank.java:532 
+     [java] 0.6 1.0 0.0 0.0	several nice little histories
+     [java] 0.6 1.0 0.0 0.0	angry voice--the rabbit 's--'pat
+     [java] 0.6 0.96 0.0 0.0	good many little girls
+     [java] 0.6 0.96 0.0 0.0	thy other queer noises
+     [java] 0.5 0.93 0.0 0.0	little busy bee
+     [java] 0.5 0.88 0.0 0.0	thing mock turtle soup
+     [java] 0.5 0.88 0.0 0.0	tiny white kid gloves
+     [java] 0.5 0.88 0.0 0.0	enough--i hope i
+     [java] 0.5 0.87 0.0 0.0	millennium fulcrum edition
+     [java] 0.5 0.87 0.0 0.0	welcome little fishes
+     [java] 0.5 0.86 0.0 0.0	little bright-eyed terrier
+     [java] 0.5 0.82 0.0 0.0	hot buttered toast
+     [java] 0.5 0.78 0.0 0.0	ignorant little girl
+     [java] 0.4 0.77 0.0 0.0	little sharp bark
+     [java] 0.4 0.75 0.0 0.0	neat little house
+     [java] 0.4 0.74 0.0 0.0	sharp little chin
+     [java] 0.4 0.74 0.0 0.0	little magic bottle
+     [java] 0.4 0.73 0.0 0.0	dear little puppy
+     [java] 0.4 0.72 0.01 0.0	little golden key
+     [java] 0.4 0.72 0.0 0.0	chief difficulty alice
+     [java] 0.4 0.72 0.0 0.0	little three-legged table
+     [java] 0.4 0.71 0.0 0.0	learnt several things
+     [java] 0.4 0.71 0.0 0.0	nice little dog
+     [java] 0.4 0.71 0.0 0.0	mouse--a mouse--o mouse
+     [java] 0.4 0.71 0.0 0.0	dear quiet thing
+     [java] 0.4 0.02 1.0 0.0	alice
+     [java] 0.4 0.71 0.0 0.0	queer little toss
+     [java] 0.4 0.7 0.0 0.0	tidy little room
+     [java] 0.4 0.7 0.0 0.0	unfortunate little bill
+     [java] 0.4 0.7 0.0 0.0	nice soft thing
+     [java] 0.4 0.69 0.0 0.0	tiny golden key
+     [java] 0.4 0.68 0.0 0.0	few little girls
+     [java] 0.4 0.68 0.0 0.0	little glass box
+     [java] 0.4 0.68 0.0 0.0	poor little juror
+     [java] 0.4 0.68 0.0 0.0	little glass table
+     [java] 0.4 0.68 0.0 0.0	large canvas bag
+     [java] 0.4 0.67 0.0 0.0	same solemn tone
+     [java] 0.4 0.67 0.0 0.0	little hot tea
+     [java] 0.4 0.67 0.0 0.0	poor little lizard
+     [java] 0.4 0.66 0.0 0.0	patriotic archbishop
+     [java] 0.4 0.66 0.0 0.0	mine--a cheshire cat
+     [java] 0.4 0.66 0.0 0.0	happy summer days
+     [java] 0.4 0.66 0.0 0.0	grown woman
+     [java] 0.4 0.66 0.0 0.0	shrill little voice
+     [java] 0.4 0.65 0.0 0.0	dull reality--the grass
+     [java] 0.4 0.65 0.0 0.0	est ma chatte
+     [java] 0.4 0.65 0.0 0.0	same little sister
+     [java] 0.4 0.65 0.0 0.0	nice grand words
+     [java] 0.4 0.64 0.0 0.0	tiny little thing
+     [java] 0.4 0.64 0.01 0.0	poor little thing
+     [java] 0.4 0.64 0.0 0.0	real mary ann
+     [java] 0.4 0.64 0.0 0.0	more broken glass
+     [java] 0.4 0.64 0.0 0.0	other little children
+     [java] 0.4 0.64 0.0 0.0	favourite word 'moral
+     [java] 0.4 0.63 0.01 0.0	beau--ootiful soo--oop
+     [java] 0.4 0.63 0.0 0.0	'any shrimp
+     [java] 0.4 0.63 0.0 0.0	deepest contempt
+     [java] 0.4 0.63 0.0 0.0	fifth bend
+     [java] 0.4 0.63 0.0 0.0	loose slate--oh
+     [java] 0.4 0.63 0.0 0.0	ridiculous fashion
+     [java] 0.4 0.63 0.0 0.0	poor little feet
+     [java] 0.4 0.63 0.0 0.0	crimson velvet cushion
+     [java] 0.4 0.63 0.0 0.0	good deal worse
+     [java] 0.4 0.63 0.0 0.0	'--or next day
+     [java] 0.4 0.62 0.0 0.0	better now--but i
+     [java] 0.4 0.61 0.0 0.0	good many voices
+     [java] 0.3 0.6 0.0 0.0	bright brass plate
+     [java] 0.3 0.6 0.0 0.0	sour--and camomile
+     [java] 0.3 0.6 0.0 0.0	constant heavy sobbing
+     [java] 0.3 0.6 0.0 0.0	great many more
+     [java] 0.3 0.59 0.0 0.0	latin grammar
+     [java] 0.3 0.59 0.0 0.0	many different sizes
+     [java] 0.3 0.59 0.01 0.0	white kid gloves
+     [java] 0.3 0.58 0.0 0.0	last few minutes
+     [java] 0.3 0.58 0.0 0.0	large eyes full
+     [java] 0.3 0.57 0.0 0.0	right paw round
+     [java] 0.3 0.56 0.0 0.0	mixed flavour
+     [java] 0.3 0.56 0.0 0.0	distant green leaves
+     [java] 0.3 0.54 0.0 0.0	wise fish
+     [java] 0.3 0.54 0.0 0.0	sharp hiss
+     [java] 0.3 0.53 0.0 0.0	little ledge
+     [java] 0.3 0.52 0.0 0.0	immediate adoption
+     [java] 0.3 0.52 0.0 0.0	meeting adjourn
+     [java] 0.3 0.51 0.0 0.0	draggled feathers
+     [java] 0.3 0.51 0.0 0.0	golden scale
+     [java] 0.3 0.49 0.0 0.0	'orange marmalade'
+     [java] 0.3 0.49 0.0 0.0	little wider
+     [java] 0.3 0.49 0.0 0.0	little worried
+     [java] 0.3 0.49 0.0 0.0	fond--of--of dogs
+     [java] 0.3 0.47 0.0 0.0	enormous puppy
+     [java] 0.3 0.47 0.0 0.0	occasional exclamation
+     [java] 0.3 0.47 0.0 0.0	stupidest tea-party
+     [java] 0.3 0.46 0.0 0.0	sharp kick
+     [java] 0.3 0.46 0.0 0.0	'it means--to--make--anything--prettier
+     [java] 0.3 0.46 0.0 0.0	violent shake
+     [java] 0.3 0.46 0.0 0.0	sorrowful tone
+     [java] 0.3 0.46 0.0 0.0	contemptuous tones
+     [java] 0.3 0.46 0.0 0.0	hopeful tone
+     [java] 0.3 0.46 0.0 0.0	impatient tone
+     [java] 0.3 0.46 0.0 0.0	louder tone
+     [java] 0.3 0.46 0.0 0.0	edgar atheling
+     [java] 0.3 0.46 0.0 0.0	dinah stop
+     [java] 0.3 0.46 0.0 0.0	muscular strength
+     [java] 0.3 0.45 0.0 0.0	english coast
+     [java] 0.3 0.45 0.0 0.0	three-legged stool
+     [java] 0.3 0.45 0.0 0.0	little scream
+     [java] 0.3 0.45 0.0 0.0	hot tureen
+     [java] 0.3 0.44 0.0 0.0	solid glass
+     [java] 0.3 0.44 0.0 0.0	unjust things--'
+     [java] 0.3 0.44 0.0 0.0	lazy thing
+     [java] 0.3 0.44 0.0 0.0	'very ill
+     [java] 0.3 0.44 0.0 0.0	elegant thimble
+     [java] 0.3 0.44 0.0 0.0	answer questions.--how
+     [java] 0.3 0.43 0.0 0.0	immense length
+     [java] 0.3 0.43 0.0 0.0	fair warning
+     [java] 0.3 0.43 0.0 0.0	parchment scroll
+     [java] 0.2 0.43 0.0 0.0	never-ending meal
+     [java] 0.2 0.43 0.0 0.0	violent blow
+     [java] 0.2 0.43 0.0 0.0	railway station
+     [java] 0.2 0.43 0.0 0.0	cheshire puss
+     [java] 0.2 0.43 0.0 0.0	exact shape
+     [java] 0.2 0.43 0.0 0.0	reasonable pace
+     [java] 0.2 0.43 0.0 0.0	'everybod y
+     [java] 0.2 0.43 0.0 0.0	little cartwheels
+     [java] 0.2 0.43 0.0 0.0	lefthand bit
+     [java] 0.2 0.43 0.0 0.0	hoarse growl
+     [java] 0.2 0.42 0.0 0.0	few yards
+     [java] 0.2 0.42 0.0 0.0	little pebbles
+     [java] 0.2 0.42 0.0 0.0	red rose-tree
+     [java] 0.2 0.42 0.0 0.0	nice muddle
+     [java] 0.2 0.42 0.0 0.0	'without pictures
+     [java] 0.2 0.42 0.0 0.0	little boy
+     [java] 0.2 0.42 0.0 0.0	graceful zigzag
+     [java] 0.2 0.42 0.0 0.0	sharp chin
+     [java] 0.2 0.42 0.01 0.0	little pattering
+     [java] 0.2 0.42 0.0 0.0	drunk half
+     [java] 0.2 0.42 0.0 0.0	riper years
+     [java] 0.2 0.42 0.0 0.0	suppressed guinea-pigs
+     [java] 0.2 0.42 0.0 0.0	multiplication table
+     [java] 0.2 0.42 0.0 0.0	encouraging opening
+     [java] 0.2 0.42 0.0 0.0	little shaking
+     [java] 0.2 0.41 0.0 0.0	dark overhead
+     [java] 0.2 0.41 0.0 0.0	wooden spades
+     [java] 0.2 0.41 0.0 0.0	truthful child
+     [java] 0.2 0.41 0.0 0.0	funny watch
+     [java] 0.2 0.41 0.0 0.0	little irritated
+     [java] 0.2 0.41 0.0 0.0	good practice
+     [java] 0.2 0.41 0.0 0.0	largest telescope
+     [java] 0.2 0.41 0.0 0.0	driest thing
+     [java] 0.2 0.41 0.0 0.0	queerest thing
+     [java] 0.2 0.41 0.0 0.0	right-hand bit
+     [java] 0.2 0.41 0.0 0.0	righthand bit
+     [java] 0.2 0.41 0.0 0.0	beautiful garden--how
+     [java] 0.2 0.41 0.0 0.0	uncommon nonsense
+     [java] 0.2 0.41 0.0 0.0	short charges
+     [java] 0.2 0.41 0.0 0.0	cool fountains
+     [java] 0.2 0.4 0.0 0.0	old magpie
+     [java] 0.2 0.4 0.0 0.0	old turtle--we
+     [java] 0.2 0.4 0.0 0.0	birthday presents
+     [java] 0.2 0.4 0.0 0.0	many teeth
+     [java] 0.2 0.4 0.0 0.0	coaxing tone
+     [java] 0.2 0.4 0.0 0.0	piteous tone
+     [java] 0.2 0.4 0.0 0.0	soothing tone
+     [java] 0.2 0.4 0.0 0.0	children sweet-tempered
+     [java] 0.2 0.4 0.0 0.0	simple joys
+     [java] 0.2 0.4 0.0 0.0	little feeble
+     [java] 0.2 0.4 0.0 0.0	great relief
+     [java] 0.2 0.4 0.0 0.0	great disappointment
+     [java] 0.2 0.4 0.0 0.0	great puzzle
+     [java] 0.2 0.4 0.0 0.0	only mustard
+     [java] 0.2 0.4 0.0 0.0	little nervous
+     [java] 0.2 0.4 0.0 0.0	mournful tone
+     [java] 0.2 0.4 0.0 0.0	people hot-tempered
+     [java] 0.2 0.4 0.0 0.0	respectful tone
+     [java] 0.2 0.4 0.0 0.0	serpents night
+     [java] 0.2 0.4 0.01 0.0	little timidly
+     [java] 0.2 0.4 0.0 0.0	humble tone
+     [java] 0.2 0.4 0.0 0.0	pretty dance
+     [java] 0.2 0.39 0.0 0.0	tremulous sound
+     [java] 0.2 0.39 0.0 0.0	good character
+     [java] 0.2 0.39 0.0 0.0	good terms
+     [java] 0.2 0.39 0.0 0.0	only difficulty
+     [java] 0.2 0.39 0.0 0.0	new zealand
+     [java] 0.2 0.39 0.0 0.0	cheap sort
+     [java] 0.2 0.39 0.0 0.0	vague sort
+     [java] 0.2 0.39 0.0 0.0	raving mad
+     [java] 0.2 0.39 0.0 0.0	oldest rule
+     [java] 0.2 0.39 0.0 0.0	encouraging tone
+     [java] 0.2 0.39 0.0 0.0	little animal
+     [java] 0.2 0.39 0.0 0.0	little larger
+     [java] 0.2 0.39 0.0 0.0	personal remarks
+     [java] 0.2 0.39 0.01 0.0	mary ann
+     [java] 0.2 0.39 0.0 0.0	many tea-things
+     [java] 0.2 0.39 0.0 0.0	'now i
+     [java] 0.2 0.39 0.0 0.0	'shall i
+     [java] 0.2 0.39 0.0 0.0	you're enough
+     [java] 0.2 0.39 0.0 0.0	cook tulip-roots
+     [java] 0.2 0.39 0.0 0.0	live hedgehogs
+     [java] 0.2 0.38 0.0 0.0	unpleasant state
+     [java] 0.2 0.38 0.0 0.0	highest tree
+     [java] 0.2 0.38 0.0 0.0	thick wood
+     [java] 0.2 0.38 0.0 0.0	'--so long
+     [java] 0.2 0.38 0.0 0.0	common way
+     [java] 0.2 0.38 0.0 0.0	pleased tone
+     [java] 0.2 0.38 0.0 0.0	large arm-chair
+     [java] 0.2 0.38 0.0 0.0	large flower-pot
+     [java] 0.2 0.38 0.0 0.0	large mustard-mine
+     [java] 0.2 0.38 0.0 0.0	nothing else
+     [java] 0.2 0.38 0.0 0.0	salt water
+     [java] 0.2 0.38 0.01 0.0	little shriek
+     [java] 0.2 0.38 0.0 0.0	very tones
+     [java] 0.2 0.38 0.0 0.0	angry tone
+     [java] 0.2 0.38 0.0 0.0	grey locks
+     [java] 0.2 0.38 0.0 0.0	solemn tone
+     [java] 0.2 0.38 0.01 0.0	little girl
+     [java] 0.2 0.38 0.0 0.0	good manners
+     [java] 0.2 0.38 0.0 0.0	hurried tone
+     [java] 0.2 0.38 0.0 0.0	paper label
+     [java] 0.2 0.37 0.0 0.0	sentence first--verdict
+     [java] 0.2 0.37 0.0 0.0	little bottle
+     [java] 0.2 0.37 0.0 0.0	other ladder?--why
+     [java] 0.2 0.37 0.01 0.0	lobster quadrille
+     [java] 0.2 0.37 0.0 0.0	'--change lobsters
+     [java] 0.2 0.37 0.0 0.0	little while
+     [java] 0.2 0.37 0.0 0.0	wild beasts
+     [java] 0.2 0.37 0.0 0.0	such dainties
+     [java] 0.2 0.37 0.0 0.0	clean cup
+     [java] 0.2 0.37 0.0 0.0	foolish alice
+     [java] 0.2 0.37 0.0 0.0	miss alice
+     [java] 0.2 0.37 0.0 0.0	little bat
+     [java] 0.2 0.37 0.0 0.0	creatures order
+     [java] 0.2 0.37 0.0 0.0	hate cats
+     [java] 0.2 0.37 0.0 0.0	simple sorrows
+     [java] 0.2 0.37 0.0 0.0	little cakes
+     [java] 0.2 0.37 0.0 0.0	little passage
+     [java] 0.2 0.37 0.0 0.0	french lesson-book
+     [java] 0.2 0.37 0.0 0.0	anything tougher
+     [java] 0.2 0.37 0.0 0.0	large letters
+     [java] 0.2 0.37 0.0 0.0	little bird
+     [java] 0.2 0.37 0.0 0.0	handsome pig
+     [java] 0.2 0.37 0.0 0.0	great curiosity
+     [java] 0.2 0.37 0.0 0.0	little creature
+     [java] 0.2 0.37 0.0 0.0	ugly child
+     [java] 0.2 0.37 0.0 0.0	curious today
+     [java] 0.2 0.37 0.0 0.0	new kind
+     [java] 0.2 0.37 0.0 0.0	queer to-day
+     [java] 0.2 0.36 0.0 0.0	tight hold
+     [java] 0.2 0.36 0.0 0.0	sulky tone
+     [java] 0.2 0.36 0.0 0.0	long ringlets
+     [java] 0.2 0.36 0.0 0.0	large saucepan
+     [java] 0.2 0.36 0.0 0.0	great delight
+     [java] 0.2 0.36 0.0 0.0	shrill cries
+     [java] 0.2 0.36 0.0 0.0	feeble voice
+     [java] 0.2 0.36 0.0 0.0	mad--at least
+     [java] 0.2 0.36 0.0 0.0	old fury
+     [java] 0.2 0.36 0.0 0.0	little queer
+     [java] 0.2 0.36 0.0 0.0	more bread
+     [java] 0.2 0.36 0.0 0.0	vulgar things
+     [java] 0.2 0.36 0.0 0.0	broken glass
+     [java] 0.2 0.36 0.0 0.0	fine day
+     [java] 0.2 0.36 0.0 0.0	little bit
+     [java] 0.2 0.36 0.0 0.0	loveliest garden
+     [java] 0.2 0.36 0.0 0.0	sudden leap
+     [java] 0.2 0.36 0.0 0.0	puzzled expression
+     [java] 0.2 0.36 0.0 0.0	great wig
+     [java] 0.2 0.36 0.0 0.0	educations--in fact
+     [java] 0.2 0.36 0.0 0.0	melancholy tone
+     [java] 0.2 0.36 0.0 0.0	poor animal
+     [java] 0.2 0.36 0.0 0.0	narrow escape
+     [java] 0.2 0.36 0.01 0.0	offended tone
+     [java] 0.2 0.36 0.0 0.0	little sisters
+     [java] 0.2 0.36 0.0 0.0	clever thing
+     [java] 0.2 0.36 0.0 0.0	dreamy sort
+     [java] 0.2 0.02 0.5 0.0	i
+     [java] 0.2 0.35 0.0 0.0	royal children
+     [java] 0.2 0.35 0.0 0.0	little use
+     [java] 0.2 0.35 0.0 0.0	great emphasis
+     [java] 0.2 0.35 0.0 0.0	queer-looking party
+     [java] 0.2 0.35 0.0 0.0	great thistle
+     [java] 0.2 0.35 0.0 0.0	very middle
+     [java] 0.2 0.35 0.0 0.0	glass table
+     [java] 0.2 0.35 0.0 0.0	helpless sort
+     [java] 0.2 0.35 0.0 0.0	same order
+     [java] 0.2 0.35 0.0 0.0	poor speaker
+     [java] 0.2 0.35 0.0 0.0	mile high
+     [java] 0.2 0.35 0.0 0.0	great crash
+     [java] 0.2 0.35 0.0 0.0	capital one
+     [java] 0.2 0.35 0.0 0.0	you--all i
+     [java] 0.2 0.35 0.0 0.0	little thing
+     [java] 0.2 0.35 0.0 0.0	'at least
+     [java] 0.2 0.35 0.0 0.0	indignant voice
+     [java] 0.2 0.35 0.0 0.0	'in fact
+     [java] 0.2 0.35 0.0 0.0	arms folded
+     [java] 0.2 0.35 0.0 0.0	old crab
+     [java] 0.2 0.35 0.0 0.0	great disgust
+     [java] 0.2 0.35 0.0 0.0	long claws
+     [java] 0.2 0.35 0.0 0.0	little house
+     [java] 0.2 0.35 0.0 0.0	dear dinah
+     [java] 0.2 0.35 0.0 0.0	clear notion
+     [java] 0.2 0.35 0.0 0.0	ground--and i
+     [java] 0.2 0.35 0.0 0.0	bathing machines
+     [java] 0.2 0.35 0.0 0.0	little dears
+     [java] 0.2 0.35 0.0 0.0	'for fear
+     [java] 0.2 0.35 0.01 0.0	old fellow
+     [java] 0.2 0.35 0.0 0.0	'--and i
+     [java] 0.2 0.35 0.0 0.0	good advice
+     [java] 0.2 0.35 0.0 0.0	furious passion
+     [java] 0.2 0.35 0.0 0.0	excellent opportunity
+     [java] 0.2 0.35 0.0 0.0	same tone
+     [java] 0.2 0.35 0.0 0.0	is--oh dear
+     [java] 0.2 0.35 0.0 0.0	'but i
+     [java] 0.2 0.34 0.0 0.0	'only one
+     [java] 0.2 0.34 0.0 0.0	half-past one
+     [java] 0.2 0.34 0.0 0.0	many miles
+     [java] 0.2 0.34 0.0 0.0	general clapping
+     [java] 0.2 0.34 0.0 0.0	large rabbit-hole
+     [java] 0.2 0.34 0.0 0.0	extraordinary noise
+     [java] 0.2 0.34 0.0 0.0	proper way
+     [java] 0.2 0.34 0.0 0.0	beloved snail
+     [java] 0.2 0.34 0.01 0.0	little way
+     [java] 0.2 0.34 0.0 0.0	first position
+     [java] 0.2 0.34 0.0 0.0	large cauldron
+     [java] 0.2 0.34 0.01 0.0	little door
+     [java] 0.2 0.34 0.0 0.0	excellent plan
+     [java] 0.2 0.34 0.0 0.0	different branches
+     [java] 0.2 0.34 0.0 0.0	young crab
+     [java] 0.2 0.34 0.0 0.0	great crowd
+     [java] 0.2 0.34 0.0 0.0	queen to-day
+     [java] 0.2 0.34 0.0 0.0	voice outside
+     [java] 0.2 0.34 0.0 0.0	dark hall
+     [java] 0.2 0.34 0.0 0.0	cat dinah
+     [java] 0.2 0.34 0.0 0.0	little alice
+     [java] 0.2 0.34 0.0 0.0	scaly friend
+     [java] 0.2 0.34 0.0 0.0	small cake
+     [java] 0.2 0.34 0.0 0.0	way ?'
+     [java] 0.2 0.34 0.0 0.0	large rose-tree
+     [java] 0.2 0.34 0.0 0.0	queer everything
+     [java] 0.2 0.34 0.0 0.0	tea spoon
+     [java] 0.2 0.34 0.0 0.0	honest man
+     [java] 0.2 0.34 0.0 0.0	same year
+     [java] 0.2 0.34 0.0 0.0	young lady
+     [java] 0.2 0.34 0.0 0.0	own child-life
+     [java] 0.2 0.34 0.0 0.0	beautiful garden
+     [java] 0.2 0.34 0.0 0.0	beauti--ful soup
+     [java] 0.2 0.34 0.0 0.0	long breath
+     [java] 0.2 0.34 0.0 0.0	pleasant temper
+     [java] 0.2 0.34 0.0 0.0	brown hair
+     [java] 0.2 0.34 0.0 0.0	hot day
+     [java] 0.2 0.34 0.01 0.0	father william
+     [java] 0.2 0.34 0.0 0.0	remarkable sensation
+     [java] 0.2 0.34 0.01 0.0	cheshire cat
+     [java] 0.2 0.34 0.0 0.0	large crowd
+     [java] 0.2 0.34 0.0 0.0	closed eyes
+     [java] 0.2 0.34 0.0 0.0	short remarks
+     [java] 0.2 0.34 0.0 0.0	hard word
+     [java] 0.2 0.33 0.0 0.0	long passage
+     [java] 0.2 0.33 0.0 0.0	you're thinking
+     [java] 0.2 0.33 0.0 0.0	other dish
+     [java] 0.2 0.33 0.0 0.0	'stupid things
+     [java] 0.2 0.33 0.01 0.0	yer honour
+     [java] 0.2 0.33 0.0 0.0	poor child
+     [java] 0.2 0.33 0.0 0.0	many footsteps
+     [java] 0.2 0.33 0.0 0.0	strange creatures
+     [java] 0.2 0.33 0.0 0.0	regular rule
+     [java] 0.2 0.33 0.0 0.0	much pleasanter
+     [java] 0.2 0.33 0.0 0.0	mad people
+     [java] 0.2 0.33 0.0 0.0	turn-up nose
+     [java] 0.2 0.33 0.0 0.0	lovely garden
+     [java] 0.2 0.33 0.0 0.0	large birds
+     [java] 0.2 0.33 0.0 0.0	queer things
+     [java] 0.2 0.33 0.0 0.0	wonderful adventures
+     [java] 0.2 0.33 0.0 0.0	shrill voice
+     [java] 0.2 0.33 0.0 0.0	least--at least
+     [java] 0.2 0.33 0.0 0.0	sudden violence
+     [java] 0.2 0.33 0.0 0.0	best butter
+     [java] 0.2 0.33 0.02 0.0	good deal
+     [java] 0.2 0.33 0.0 0.0	sudden burst
+     [java] 0.2 0.33 0.0 0.0	other guests
+     [java] 0.2 0.33 0.01 0.0	great deal
+     [java] 0.2 0.33 0.02 0.0	beautiful soup
+     [java] 0.2 0.33 0.0 0.0	cheshire cats
+     [java] 0.2 0.33 0.0 0.0	loud voice
+     [java] 0.2 0.33 0.0 0.0	dreadfully one
+     [java] 0.2 0.33 0.0 0.0	such nonsense
+     [java] 0.2 0.33 0.0 0.0	summer day
+     [java] 0.2 0.31 0.17 0.0	mock turtle
+     [java] 0.2 0.33 0.0 0.0	last march--just
+     [java] 0.2 0.33 0.0 0.0	large fan
+     [java] 0.2 0.33 0.0 0.0	'if i
+     [java] 0.2 0.33 0.0 0.0	other birds
+     [java] 0.2 0.33 0.0 0.0	own courage
+     [java] 0.2 0.33 0.0 0.0	confusing thing
+     [java] 0.2 0.33 0.0 0.0	out-of-the-way things
+     [java] 0.2 0.33 0.0 0.0	grand procession
+     [java] 0.2 0.33 0.0 0.0	cat grins
+     [java] 0.2 0.32 0.0 0.0	timid voice
+     [java] 0.2 0.32 0.0 0.0	mad things
+     [java] 0.2 0.32 0.0 0.0	good opportunity
+     [java] 0.2 0.32 0.0 0.0	melancholy voice
+     [java] 0.2 0.32 0.0 0.0	great surprise
+     [java] 0.2 0.32 0.0 0.0	curious appearance
+     [java] 0.2 0.32 0.0 0.0	messages next
+     [java] 0.2 0.32 0.0 0.0	great fear
+     [java] 0.2 0.32 0.0 0.0	other parts
+     [java] 0.2 0.32 0.0 0.0	clear way
+     [java] 0.2 0.32 0.0 0.0	other guinea-pig
+     [java] 0.2 0.32 0.0 0.0	round face
+     [java] 0.2 0.32 0.0 0.0	slightest idea
+     [java] 0.2 0.32 0.0 0.0	you're wrong
+     [java] 0.2 0.32 0.0 0.0	melancholy way
+     [java] 0.2 0.32 0.01 0.0	inches high
+     [java] 0.2 0.32 0.0 0.0	good thing
+     [java] 0.2 0.32 0.0 0.0	great concert
+     [java] 0.2 0.32 0.0 0.0	everything i
+     [java] 0.2 0.32 0.0 0.0	several times
+     [java] 0.2 0.32 0.0 0.0	other players
+     [java] 0.2 0.32 0.0 0.0	small ones
+     [java] 0.2 0.32 0.0 0.0	twentieth time
+     [java] 0.2 0.32 0.0 0.0	long tail
+     [java] 0.2 0.32 0.0 0.0	dry leaves
+     [java] 0.2 0.32 0.0 0.0	young man
+     [java] 0.2 0.32 0.0 0.0	interesting dance
+     [java] 0.2 0.32 0.0 0.0	new pair
+     [java] 0.2 0.32 0.0 0.0	first speech
+     [java] 0.2 0.32 0.02 0.0	same thing
+     [java] 0.2 0.32 0.02 0.0	great hurry
+     [java] 0.2 0.32 0.0 0.0	last resource
+     [java] 0.2 0.32 0.0 0.0	foot high
+     [java] 0.2 0.32 0.0 0.0	wonderful dream
+     [java] 0.2 0.32 0.0 0.0	curious feeling
+     [java] 0.2 0.32 0.0 0.0	other bit
+     [java] 0.2 0.32 0.0 0.0	bright flower-beds
+     [java] 0.2 0.32 0.0 0.0	other end
+     [java] 0.2 0.32 0.0 0.0	confused way
+     [java] 0.2 0.32 0.0 0.0	sleepy voice
+     [java] 0.2 0.32 0.0 0.0	good height
+     [java] 0.2 0.32 0.0 0.0	sad tale
+     [java] 0.2 0.32 0.0 0.0	best thing
+     [java] 0.2 0.32 0.0 0.0	mouth close
+     [java] 0.2 0.32 0.0 0.0	general chorus
+     [java] 0.2 0.32 0.0 0.0	different person
+     [java] 0.2 0.32 0.0 0.0	large kitchen
+     [java] 0.2 0.32 0.0 0.0	pink eyes
+     [java] 0.2 0.32 0.01 0.0	feet high
+     [java] 0.2 0.32 0.0 0.0	great hall
+     [java] 0.2 0.32 0.0 0.0	short time
+     [java] 0.2 0.32 0.0 0.0	difficult game
+     [java] 0.2 0.32 0.0 0.0	long grass
+     [java] 0.2 0.32 0.0 0.0	own business
+     [java] 0.2 0.32 0.0 0.0	good school
+     [java] 0.2 0.31 0.0 0.0	curious sensation
+     [java] 0.2 0.31 0.01 0.0	poor man
+     [java] 0.2 0.31 0.0 0.0	other children
+     [java] 0.2 0.31 0.0 0.0	real turtle
+     [java] 0.2 0.31 0.0 0.0	good reason
+     [java] 0.2 0.31 0.0 0.0	many hours
+     [java] 0.2 0.31 0.0 0.0	late much
+     [java] 0.2 0.31 0.0 0.0	best plan
+     [java] 0.2 0.31 0.0 0.0	same height
+     [java] 0.2 0.31 0.0 0.0	matter worse
+     [java] 0.2 0.31 0.0 0.0	such thing
+     [java] 0.2 0.31 0.0 0.0	curious croquet-ground
+     [java] 0.2 0.31 0.01 0.0	i wish
+     [java] 0.2 0.31 0.0 0.0	good way
+     [java] 0.2 0.31 0.0 0.0	i wonder
+     [java] 0.2 0.31 0.0 0.0	own children
+     [java] 0.2 0.31 0.0 0.0	you're nothing
+     [java] 0.2 0.31 0.0 0.0	same words
+     [java] 0.2 0.31 0.0 0.0	large mushroom
+     [java] 0.2 0.31 0.0 0.0	much use
+     [java] 0.2 0.31 0.0 0.0	curious thing
+     [java] 0.2 0.31 0.0 0.0	least notice
+     [java] 0.2 0.31 0.0 0.0	dreadful time
+     [java] 0.2 0.31 0.02 0.0	'of course
+     [java] 0.2 0.31 0.0 0.0	dead leaves
+     [java] 0.2 0.31 0.0 0.0	long hall
+     [java] 0.2 0.31 0.0 0.0	bright flowers
+     [java] 0.2 0.31 0.0 0.0	mouth open
+     [java] 0.2 0.31 0.0 0.0	many lessons
+     [java] 0.2 0.31 0.0 0.0	garden door
+     [java] 0.2 0.31 0.0 0.0	french mouse
+     [java] 0.2 0.31 0.0 0.0	high time
+     [java] 0.2 0.3 0.1 0.0	march hare
+     [java] 0.2 0.31 0.0 0.0	likely story
+     [java] 0.2 0.31 0.0 0.0	natural way
+     [java] 0.2 0.31 0.0 0.0	turtle soup
+     [java] 0.2 0.31 0.0 0.0	long words
+     [java] 0.2 0.31 0.0 0.0	such confusion
+     [java] 0.2 0.31 0.0 0.0	much frightened
+     [java] 0.2 0.31 0.0 0.0	real nose
+     [java] 0.2 0.31 0.0 0.0	curious song
+     [java] 0.2 0.31 0.0 0.0	curious plan
+     [java] 0.2 0.31 0.0 0.0	new idea
+     [java] 0.2 0.31 0.03 0.0	poor alice
+     [java] 0.2 0.31 0.0 0.0	next remark
+     [java] 0.2 0.31 0.0 0.0	second thing
+     [java] 0.2 0.31 0.0 0.0	best way
+     [java] 0.2 0.31 0.0 0.0	dead silence
+     [java] 0.2 0.31 0.0 0.0	long way
+     [java] 0.2 0.31 0.0 0.0	miserable hatter
+     [java] 0.2 0.31 0.01 0.0	few minutes
+     [java] 0.2 0.31 0.0 0.0	difficult question
+     [java] 0.2 0.31 0.0 0.0	next thing
+     [java] 0.2 0.31 0.0 0.0	large pigeon
+     [java] 0.2 0.31 0.01 0.0	last remark
+     [java] 0.2 0.31 0.0 0.0	regular course
+     [java] 0.2 0.31 0.0 0.0	low hall
+     [java] 0.2 0.31 0.0 0.0	other subject
+     [java] 0.2 0.31 0.0 0.0	large piece
+     [java] 0.2 0.31 0.0 0.0	strange tale
+     [java] 0.2 0.3 0.0 0.0	best cat
+     [java] 0.2 0.3 0.0 0.0	days wrong
+     [java] 0.2 0.3 0.0 0.0	tiny hands
+     [java] 0.2 0.3 0.0 0.0	same side
+     [java] 0.2 0.3 0.0 0.0	poor hands
+     [java] 0.2 0.3 0.0 0.0	last concert
+     [java] 0.2 0.3 0.0 0.0	open place
+     [java] 0.2 0.3 0.0 0.0	much pepper
+     [java] 0.2 0.3 0.01 0.0	low voice
+     [java] 0.2 0.3 0.0 0.0	long hookah
+     [java] 0.2 0.3 0.0 0.0	great question
+     [java] 0.2 0.3 0.0 0.0	large cat
+     [java] 0.2 0.3 0.0 0.0	smallest idea
+     [java] 0.2 0.3 0.0 0.0	usual height
+     [java] 0.2 0.3 0.0 0.0	curious dream
+     [java] 0.2 0.3 0.0 0.0	inches deep
+     [java] 0.2 0.3 0.0 0.0	deep sigh
+     [java] 0.2 0.3 0.0 0.0	frightened mouse
+     [java] 0.2 0.3 0.0 0.0	whole thing
+     [java] 0.2 0.3 0.0 0.0	first remark
+     [java] 0.2 0.3 0.0 0.0	deep voice
+     [java] 0.2 0.3 0.0 0.0	such stuff
+     [java] 0.2 0.3 0.0 0.0	great eyes
+     [java] 0.2 0.3 0.0 0.0	same size
+     [java] 0.2 0.3 0.0 0.0	first sentence
+     [java] 0.2 0.3 0.0 0.0	sure i
+     [java] 0.2 0.3 0.0 0.0	first thing
+     [java] 0.2 0.3 0.0 0.0	moment alice
+     [java] 0.2 0.3 0.0 0.0	much matter
+     [java] 0.2 0.3 0.0 0.0	more tea
+     [java] 0.2 0.3 0.0 0.0	majesty means
+     [java] 0.2 0.3 0.0 0.0	own tears
+     [java] 0.2 0.3 0.0 0.0	long silence
+     [java] 0.2 0.3 0.0 0.0	mouse dear
+     [java] 0.2 0.3 0.0 0.0	interesting story
+     [java] 0.2 0.3 0.0 0.0	long time
+     [java] 0.2 0.3 0.0 0.0	whole pack
+     [java] 0.2 0.3 0.0 0.0	whole window
+     [java] 0.2 0.3 0.0 0.0	first figure
+     [java] 0.2 0.3 0.0 0.0	nothing better
+     [java] 0.2 0.3 0.0 0.0	dear paws
+     [java] 0.2 0.29 0.07 0.0	white rabbit
+     [java] 0.2 0.3 0.0 0.0	change lobster
+     [java] 0.2 0.3 0.0 0.0	something interesting
+     [java] 0.2 0.3 0.0 0.0	long argument
+     [java] 0.2 0.3 0.0 0.0	right thing
+     [java] 0.2 0.3 0.01 0.0	last word
+     [java] 0.2 0.3 0.0 0.0	own mind
+     [java] 0.2 0.3 0.02 0.0	other side
+     [java] 0.2 0.3 0.0 0.0	next moment
+     [java] 0.2 0.3 0.0 0.0	own feet
+     [java] 0.2 0.3 0.0 0.0	more puzzled
+     [java] 0.2 0.3 0.0 0.0	large eyes
+     [java] 0.2 0.3 0.0 0.0	right house
+     [java] 0.2 0.29 0.0 0.0	important piece
+     [java] 0.2 0.29 0.0 0.0	nothing more
+     [java] 0.2 0.29 0.0 0.0	executes nobody
+     [java] 0.2 0.29 0.0 0.0	something more
+     [java] 0.2 0.29 0.0 0.0	sudden change
+     [java] 0.2 0.29 0.0 0.0	least idea
+     [java] 0.2 0.29 0.0 0.0	heavy sobs
+     [java] 0.2 0.29 0.0 0.0	puzzling question
+     [java] 0.2 0.29 0.0 0.0	right height
+     [java] 0.2 0.29 0.0 0.0	anything more
+     [java] 0.2 0.29 0.0 0.0	other arm
+     [java] 0.2 0.29 0.0 0.0	much evidence
+     [java] 0.2 0.29 0.0 0.0	open air
+     [java] 0.2 0.29 0.0 0.0	second time
+     [java] 0.2 0.29 0.0 0.0	right word
+     [java] 0.2 0.29 0.0 0.0	other paw
+     [java] 0.2 0.29 0.0 0.0	more evidence
+     [java] 0.2 0.29 0.0 0.0	more questions
+     [java] 0.2 0.29 0.01 0.0	whole party
+     [java] 0.2 0.29 0.0 0.0	own ears
+     [java] 0.2 0.29 0.0 0.0	next question
+     [java] 0.2 0.29 0.0 0.0	second thoughts
+     [java] 0.2 0.29 0.0 0.0	right way
+     [java] 0.2 0.29 0.0 0.0	right foot
+     [java] 0.2 0.29 0.0 0.0	second verse
+     [java] 0.2 0.29 0.0 0.0	attempt
+     [java] 0.2 0.29 0.0 0.0	right size
+     [java] 0.2 0.29 0.0 0.0	last time
+     [java] 0.2 0.29 0.0 0.0	green stuff
+     [java] 0.2 0.29 0.0 0.0	next verse
+     [java] 0.2 0.29 0.0 0.0	whole court
+     [java] 0.2 0.29 0.0 0.0	first day
+     [java] 0.2 0.29 0.0 0.0	green leaves
+     [java] 0.2 0.28 0.0 0.0	bright idea
+     [java] 0.2 0.28 0.0 0.0	first question
+     [java] 0.2 0.28 0.0 0.0	eyes bright
+     [java] 0.2 0.28 0.01 0.0	next witness
+     [java] 0.2 0.28 0.0 0.0	first thought
+     [java] 0.2 0.28 0.0 0.0	important air
+     [java] 0.2 0.28 0.0 0.0	first verse
+     [java] 0.2 0.28 0.0 0.0	right size
+     [java] 0.2 0.28 0.0 0.0	right ear
+     [java] 0.2 0.28 0.0 0.0	first witness
+     [java] 0.2 0.28 0.0 0.0	distant sobs
+     [java] 0.2 0.27 0.0 0.0	first minute
+     [java] 0.1 0.22 0.01 0.0	chapter
+     [java] 0.1 0.19 0.0 0.0	archbishop
+     [java] 0.1 0.01 0.26 0.0	queen
+     [java] 0.1 0.01 0.22 0.0	kings
+     [java] 0.1 0.01 0.22 0.0	time
+     [java] 0.1 0.14 0.01 0.0	owl
+     [java] 0.1 0.14 0.01 0.0	panther
+     [java] 0.1 0.01 0.19 0.0	hatter
+     [java] 0.1 0.01 0.19 0.0	heads
+     [java] 0.1 0.0 0.19 0.0	gryphon
+     [java] 0.1 0.11 0.0 0.0	poison
+     [java] 0.1 0.01 0.14 0.0	cat
+     [java] 0.1 0.01 0.14 0.0	duchess
+     [java] 0.1 0.01 0.13 0.0	dormouse
+     [java] 
+
+BUILD SUCCESSFUL
+Total time: 12 seconds

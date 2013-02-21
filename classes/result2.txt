@@ -1,0 +1,85 @@
+Buildfile: /home/lekha/dls/joshjdevl-textrank-ab5afac/build.xml
+
+clean:
+   [delete] Deleting directory /home/lekha/dls/joshjdevl-textrank-ab5afac/classes
+
+compile:
+    [mkdir] Created dir: /home/lekha/dls/joshjdevl-textrank-ab5afac/classes
+    [javac] /home/lekha/dls/joshjdevl-textrank-ab5afac/build.xml:121: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 14 source files to /home/lekha/dls/joshjdevl-textrank-ab5afac/classes
+
+run:
+     [java] MessageLog.java:62 Installing dictionary net.didion.jwnl.dictionary.FileBackedDictionary@2c351b05
+     [java] TextRank.java:378 ELAPSED_TIME:	49519	construct_graph
+     [java] Graph.java:144 iteration: 0 error: 0.056548823290420346
+     [java] Graph.java:144 iteration: 1 error: 0.034816329672752507
+     [java] Graph.java:144 iteration: 2 error: 0.015834932806061863
+     [java] Graph.java:144 iteration: 3 error: 0.010234783033606384
+     [java] Graph.java:144 iteration: 4 error: 0.005029262540814955
+     [java] Graph.java:144 iteration: 5 error: 0.0033898457081464497
+     [java] TextRank.java:378 ELAPSED_TIME:	943	basic_textrank
+     [java] TextRank.java:219 TEXT_BYTES:	0
+     [java] TextRank.java:220 GRAPH_SIZE:	12074
+     [java] TextRank.java:378 ELAPSED_TIME:	52	augment_graph
+     [java] Graph.java:144 iteration: 0 error: 3.177222139297308
+     [java] Graph.java:144 iteration: 1 error: 2.482170896152127
+     [java] Graph.java:144 iteration: 2 error: 0.5155308722028611
+     [java] Graph.java:144 iteration: 3 error: 0.6298305149870269
+     [java] Graph.java:144 iteration: 4 error: 0.06008449017368669
+     [java] Graph.java:144 iteration: 5 error: 0.20420621963854316
+     [java] Graph.java:144 iteration: 6 error: 0.05510499775827978
+     [java] Graph.java:144 iteration: 7 error: 0.08423623319463235
+     [java] Graph.java:144 iteration: 8 error: 0.042835208170115865
+     [java] Graph.java:144 iteration: 9 error: 0.042930291216017234
+     [java] Graph.java:144 iteration: 10 error: 0.02907921047913273
+     [java] Graph.java:144 iteration: 11 error: 0.025386364351859193
+     [java] Graph.java:144 iteration: 12 error: 0.01949250023799381
+     [java] Graph.java:144 iteration: 13 error: 0.016388665621293423
+     [java] Graph.java:144 iteration: 14 error: 0.013273494117336457
+     [java] Graph.java:144 iteration: 15 error: 0.011099406775837104
+     [java] Graph.java:144 iteration: 16 error: 0.009201474744809706
+     [java] Graph.java:144 iteration: 17 error: 0.007716209457325436
+     [java] Graph.java:144 iteration: 18 error: 0.006466892728281738
+     [java] Graph.java:144 iteration: 19 error: 0.0054438340884312274
+     [java] Graph.java:144 iteration: 20 error: 0.004587922851048424
+     [java] TextRank.java:378 ELAPSED_TIME:	566	ngram_textrank
+     [java] TextRank.java:378 ELAPSED_TIME:	759	normalize_ranks
+     [java] TextRank.java:532 
+     [java] 0.4 0.0 1.0 0.0	methods
+     [java] 0.2 0.0 0.57 0.0	java
+     [java] 0.2 0.0 0.48 0.0	classes
+     [java] 0.2 0.0 0.48 0.0	objects
+     [java] 0.2 0.0 0.47 0.0	program
+     [java] 0.2 0.0 0.41 0.0	example
+     [java] 0.2 0.0 0.4 0.0	system .out.println
+     [java] 0.2 0.0 0.4 0.0	chapter
+     [java] 0.1 0.0 0.36 0.0	value
+     [java] 0.1 0.0 0.34 0.0	applets
+     [java] 0.1 0.0 0.29 0.0	strings
+     [java] 0.1 0.0 0.22 0.0	thread
+     [java] 0.1 0.0 0.21 0.0	file
+     [java] 0.1 0.0 0.19 0.0	names
+     [java] 0.1 0.0 0.18 0.0	time
+     [java] 0.1 0.0 0.17 0.0	interfaces
+     [java] 0.1 0.0 0.17 0.0	arrays
+     [java] 0.1 0.0 0.17 0.0	output
+     [java] 0.1 0.0 0.17 0.0	tables
+     [java] 0.1 0.0 0.17 0.0	version
+     [java] 0.1 0.0 0.16 0.0	number
+     [java] 0.1 0.0 0.15 0.0	type
+     [java] 0.1 0.0 0.15 0.0	constructors
+     [java] 0.1 0.0 0.15 0.0	b
+     [java] 0.1 0.0 0.14 0.0	event
+     [java] 0.1 0.0 0.14 0.0	lists
+     [java] 0.1 0.0 0.14 0.0	elements
+     [java] 0.1 0.0 0.14 0.0	images
+     [java] 0.1 0.0 0.14 0.0	windows
+     [java] 0.1 0.0 0.14 0.0	int
+     [java] 0.1 0.0 0.14 0.0	characters
+     [java] 0.1 0.0 0.13 0.0	//
+     [java] 0.1 0.0 0.13 0.0	case
+     [java] 0.1 0.0 0.13 0.0	code
+     [java] 
+
+BUILD SUCCESSFUL
+Total time: 57 seconds

@@ -1,0 +1,11 @@
+This project contains modifications to open source textrank implementation for a project.
+
+To run it, compile using eclipse, and run the TextRank.java file. 
+You must give path of a .txt file as command line argument which is the source file on which textrank algorithm will be run.
+
+-------------------------------------------------------------------
+
+Modifications made to original source so far:
+
+1) TextRank.java main method. All command line arguments changed to hardcoded ones except source file.
+ 

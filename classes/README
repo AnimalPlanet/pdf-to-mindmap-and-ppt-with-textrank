@@ -1,0 +1,76 @@
+Open source Java implementation of the TextRank algorithm by Mihalcea,
+et al. Note that this code only implements key phrase extraction based
+on keyword co-occurance described in section 3 of the Mihalcea-Tarau
+paper. This code does not yet implement the sentence extraction
+described in section 4 of that paper.
+
+See also:
+  http://lit.csci.unt.edu/index.php/Graph-based_NLP
+
+GitHub code repo:
+  http://github.com/ceteri/textrank/
+
+GoogleGroups discussion:
+  http://groups.google.com/group/textrank-dev
+
+
+Paco NATHAN
+pacoid@cs.stanford.edu
+@pacoid
+http://www.google.com/profiles/ceteri
+
+
+NB: There is a known issue with use of JWNL (Java libraries for
+WordNet) such that if the graph size exceeds a particular threshold,
+then low-level Java I/O reads to the WordNet database on disk will
+cause Java thread to block -- even though JVM tools show no blocked
+threads.
+
+A potential remedy is to dump WordNet, or at least the parts of it
+used here, into some DBD structure with an in-memory cache.
+
+---------
+
+simple test:
+	ant run
+
+test with a specific data file FOO.txt
+
+	ant -Ddata.file=FOO.txt run
+
+build the JAR for export to another project:
+	ant jar
+
+---------
+
+Sources for third-party JAR files:
+
+commons-logging-1.1.1.jar
+    http://commons.apache.org/downloads/download_logging.cgi
+
+commons-math-1.2.jar
+    http://commons.apache.org/downloads/download_math.cgi
+
+log4j-1.2.15.jar
+    http://logging.apache.org/log4j/1.2/download.html
+
+porterstemmer.jar
+    http://snowball.tartarus.org/download.php
+
+opennlp-tools-1.3.0.jar
+    http://opennlp.sourceforge.net/
+
+maxent-2.4.0.jar                
+    https://sourceforge.net/projects/maxent/
+
+sptoolkit.jar
+    http://text0.mib.man.ac.uk:8080/scottpiao/sent_detector
+
+trove-2.0.2.jar
+    http://trove4j.sourceforge.net/
+
+jwnl-1.4rc1.jar
+    http://sourceforge.net/projects/jwordnet
+
+jdom-1-1.jar
+    http://jdom.org/downloads/index.html

@@ -1,0 +1,325 @@
+Buildfile: /home/lekha/dls/joshjdevl-textrank-ab5afac/build.xml
+
+clean:
+   [delete] Deleting directory /home/lekha/dls/joshjdevl-textrank-ab5afac/classes
+
+compile:
+    [mkdir] Created dir: /home/lekha/dls/joshjdevl-textrank-ab5afac/classes
+    [javac] /home/lekha/dls/joshjdevl-textrank-ab5afac/build.xml:121: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 14 source files to /home/lekha/dls/joshjdevl-textrank-ab5afac/classes
+
+run:
+     [java] MessageLog.java:62 Installing dictionary net.didion.jwnl.dictionary.FileBackedDictionary@eca425c
+     [java] TextRank.java:378 ELAPSED_TIME:	2822	construct_graph
+     [java] Graph.java:144 iteration: 0 error: 0.07183456294797311
+     [java] Graph.java:144 iteration: 1 error: 0.037065952233114506
+     [java] Graph.java:144 iteration: 2 error: 0.021684817936600938
+     [java] Graph.java:144 iteration: 3 error: 0.014397825827254964
+     [java] Graph.java:144 iteration: 4 error: 0.010305331076804152
+     [java] Graph.java:144 iteration: 5 error: 0.007957641158913117
+     [java] Graph.java:144 iteration: 6 error: 0.006253268384365508
+     [java] Graph.java:144 iteration: 7 error: 0.005128635367686879
+     [java] Graph.java:144 iteration: 8 error: 0.004175232355928155
+     [java] TextRank.java:378 ELAPSED_TIME:	65	basic_textrank
+     [java] TextRank.java:219 TEXT_BYTES:	0
+     [java] TextRank.java:220 GRAPH_SIZE:	523
+     [java] TextRank.java:378 ELAPSED_TIME:	8244	augment_graph
+     [java] Graph.java:144 iteration: 0 error: 0.08859057504224553
+     [java] Graph.java:144 iteration: 1 error: 0.0580860830193691
+     [java] Graph.java:144 iteration: 2 error: 0.033108494041269816
+     [java] Graph.java:144 iteration: 3 error: 0.027485772272366676
+     [java] Graph.java:144 iteration: 4 error: 0.020217431106499047
+     [java] Graph.java:144 iteration: 5 error: 0.017020579713960753
+     [java] Graph.java:144 iteration: 6 error: 0.013505689209331257
+     [java] Graph.java:144 iteration: 7 error: 0.011437038372196878
+     [java] Graph.java:144 iteration: 8 error: 0.009370796798029466
+     [java] Graph.java:144 iteration: 9 error: 0.007956015449064676
+     [java] Graph.java:144 iteration: 10 error: 0.006619586756106669
+     [java] Graph.java:144 iteration: 11 error: 0.005625029575380126
+     [java] Graph.java:144 iteration: 12 error: 0.004716089922588262
+     [java] TextRank.java:378 ELAPSED_TIME:	62	ngram_textrank
+     [java] TextRank.java:378 ELAPSED_TIME:	83	normalize_ranks
+     [java] TextRank.java:532 
+     [java] 0.7 0.0 0.49 1.0	operators
+     [java] 0.7 0.15 0.0 1.0	several op=operator assignments
+     [java] 0.7 0.15 0.0 1.0	bitwise logical operators
+     [java] 0.7 0.14 0.02 1.0	bitwise logical operators
+     [java] 0.7 0.14 0.0 1.0	logical boolean operators
+     [java] 0.7 0.14 0.0 1.0	interesting boolean operators
+     [java] 0.7 0.14 0.0 1.0	bitwise operator assignments
+     [java] 0.7 0.14 0.02 1.0	>> > operator
+     [java] 0.7 0.14 0.0 1.0	boolean logical operators
+     [java] 0.7 0.14 0.0 1.0	> > operator
+     [java] 0.7 0.13 0.06 1.0	relational operators
+     [java] 0.7 0.14 0.0 1.0	additional operators
+     [java] 0.7 0.13 0.04 1.0	bitwise operators
+     [java] 0.7 0.13 0.02 1.0	operator results
+     [java] 0.7 0.13 0.0 1.0	% operator
+     [java] 0.4 0.0 1.0 0.24	b
+     [java] 0.4 0.14 0.0 0.56	boolean state
+     [java] 0.4 0.1 0.84 0.17	system .out.println
+     [java] 0.4 0.0 0.84 0.15	value
+     [java] 0.3 0.0 0.67 0.28	bit
+     [java] 0.3 0.05 0.02 0.44	individual bits
+     [java] 0.3 0.0 0.31 0.39	java
+     [java] 0.3 0.04 0.0 0.42	binary logical operators
+     [java] 0.3 0.04 0.0 0.42	binary value n
+     [java] 0.3 0.04 0.0 0.42	binary bitwise operators
+     [java] 0.3 0.03 0.0 0.42	binary shows
+     [java] 0.3 0.03 0.0 0.42	binary array
+     [java] 0.3 0.03 0.0 0.42	binary representation
+     [java] 0.3 0.03 0.0 0.42	+ binary[a]
+     [java] 0.3 0.03 0.0 0.42	+ binary[e]
+     [java] 0.3 0.03 0.0 0.42	binary operators
+     [java] 0.3 0.03 0.0 0.42	binary numbers
+     [java] 0.3 0.03 0.0 0.42	binary form
+     [java] 0.3 0.03 0.0 0.42	binary bits
+     [java] 0.3 0.45 0.02 0.18	line y
+     [java] 0.3 0.07 0.0 0.39	java stores integer values
+     [java] 0.3 0.07 0.0 0.39	javas automatic type promotions
+     [java] 0.3 0.06 0.0 0.39	java boolean value
+     [java] 0.3 0.06 0.0 0.39	javas integer types
+     [java] 0.3 0.05 0.0 0.39	java run-time system
+     [java] 0.3 0.05 0.0 0.39	javas increment
+     [java] 0.3 0.05 0.02 0.39	javas operators
+     [java] 0.3 0.05 0.0 0.39	java programs
+     [java] 0.3 0.04 0.0 0.39	javas unsigned
+     [java] 0.2 0.2 0.0 0.3	&& forms
+     [java] 0.2 0.2 0.0 0.3	unary form
+     [java] 0.2 0.19 0.0 0.3	long forms
+     [java] 0.2 0.0 0.39 0.24	expression
+     [java] 0.2 0.0 0.49 0.16	example
+     [java] 0.2 0.31 0.0 0.17	point arithmetic
+     [java] 0.2 0.31 0.0 0.17	other point
+     [java] 0.2 0.08 0.0 0.3	class basicmath
+     [java] 0.2 0.08 0.0 0.3	class boollogic
+     [java] 0.2 0.08 0.0 0.3	class byteshift
+     [java] 0.2 0.08 0.0 0.3	class byteushift
+     [java] 0.2 0.08 0.0 0.3	class hexbyte
+     [java] 0.2 0.08 0.0 0.3	class incdec
+     [java] 0.2 0.08 0.0 0.3	class multbytwo
+     [java] 0.2 0.08 0.0 0.3	class opbitequals
+     [java] 0.2 0.08 0.0 0.3	class opequals
+     [java] 0.2 0.08 0.0 0.3	class modulus
+     [java] 0.2 0.08 0.0 0.3	class bitlogic
+     [java] 0.2 0.11 0.0 0.28	next bit position
+     [java] 0.2 0.0 0.04 0.3	forms
+     [java] 0.2 0.1 0.04 0.28	bit position
+     [java] 0.2 0.1 0.0 0.28	64-bit values
+     [java] 0.2 0.1 0.0 0.28	bit widths
+     [java] 0.2 0.1 0.0 0.28	16-bit value
+     [java] 0.2 0.1 0.0 0.28	32-bit value
+     [java] 0.2 0.1 0.0 0.28	bit patterns
+     [java] 0.2 0.1 0.0 0.28	rightmost bit
+     [java] 0.2 0.1 0.0 0.28	producesa1 bit
+     [java] 0.2 0.1 0.0 0.28	bit manipulations
+     [java] 0.2 0.1 0.0 0.28	bits such
+     [java] 0.2 0.0 0.14 0.28	number
+     [java] 0.2 0.15 0.02 0.27	division operation
+     [java] 0.2 0.28 0.0 0.18	other cases
+     [java] 0.2 0.05 0.02 0.28	single equal sign
+     [java] 0.2 0.05 0.0 0.28	ones complement
+     [java] 0.2 0.04 0.0 0.28	single-character versions
+     [java] 0.2 0.04 0.0 0.28	single statement
+     [java] 0.2 0.04 0.0 0.28	single operand
+     [java] 0.2 0.13 0.0 0.26	second operand
+     [java] 0.2 0.01 0.0 0.28	i<4
+     [java] 0.2 0.0 0.27 0.21	statements
+     [java] 0.2 0.0 0.43 0.07	program
+     [java] 0.2 0.07 0.1 0.24	int b
+     [java] 0.2 0.09 0.0 0.24	larger expression
+     [java] 0.2 0.09 0.0 0.24	> > b +
+     [java] 0.2 0.09 0.0 0.24	bitwise expression
+     [java] 0.2 0.09 0.0 0.24	mathematical expressions
+     [java] 0.2 0.09 0.0 0.24	complicated expression
+     [java] 0.2 0.08 0.0 0.24	b > >
+     [java] 0.2 0.08 0.0 0.24	b >> >
+     [java] 0.2 0.07 0.04 0.24	| b
+     [java] 0.2 0.07 0.02 0.24	> > b
+     [java] 0.2 0.07 0.0 0.24	b positions
+     [java] 0.2 0.07 0.0 0.24	< b
+     [java] 0.2 0.07 0.0 0.24	b +
+     [java] 0.2 0.07 0.0 0.24	+ b
+     [java] 0.2 0.07 0.0 0.24	b >>
+     [java] 0.2 0.0 0.33 0.14	result
+     [java] 0.2 0.0 0.0 0.24	expression2
+     [java] 0.2 0.0 0.25 0.18	c
+     [java] 0.2 0.13 0.08 0.2	sign extension
+     [java] 0.2 0.13 0.0 0.2	sign extensionand
+     [java] 0.2 0.13 0.0 0.2	sign-extended bits
+     [java] 0.2 0.13 0.0 0.2	sign bit
+     [java] 0.2 0.06 0.06 0.21	short values
+     [java] 0.2 0.06 0.0 0.21	short-circuitlogical operators
+     [java] 0.1 0.05 0.0 0.21	short-circuit logical evaluation
+     [java] 0.1 0.03 0.02 0.21	short-circuit form
+     [java] 0.1 0.0 0.27 0.14	byte
+     [java] 0.1 0.0 0.12 0.2	integer
+     [java] 0.1 0.03 0.1 0.2	integer type
+     [java] 0.1 0.0 0.04 0.2	sign
+     [java] 0.1 0.09 0.08 0.18	+ c
+     [java] 0.1 0.09 0.08 0.18	int c
+     [java] 0.1 0.1 0.0 0.18	+ c >
+     [java] 0.1 0.03 0.0 0.2	integer math
+     [java] 0.1 0.03 0.0 0.2	integer arithmetic
+     [java] 0.1 0.03 0.0 0.2	integer division
+     [java] 0.1 0.09 0.02 0.18	boolean c
+     [java] 0.1 0.09 0.0 0.18	c %
+     [java] 0.1 0.09 0.0 0.18	c <<
+     [java] 0.1 0.09 0.0 0.18	+ c
+     [java] 0.1 0.09 0.0 0.18	c +
+     [java] 0.1 0.13 0.02 0.17	system .out.print (absolute value
+     [java] 0.1 0.1 0.0 0.18	type comparison operator
+     [java] 0.1 0.08 0.04 0.18	numeric type
+     [java] 0.1 0.08 0.0 0.18	certain types
+     [java] 0.1 0.08 0.0 0.18	boolean types
+     [java] 0.1 0.12 0.0 0.17	unsigned shift right operator
+     [java] 0.1 0.11 0.0 0.17	system .out.println( num
+     [java] 0.1 0.0 0.1 0.18	typing
+     [java] 0.1 0.1 0.02 0.17	system .out.println(
+     [java] 0.1 0.1 0.0 0.17	system .out.println
+     [java] 0.1 0.0 0.31 0.04	operands
+     [java] 0.1 0.1 0.0 0.17	shift-right operator
+     [java] 0.1 0.09 0.0 0.17	>=shift right
+     [java] 0.1 0.09 0.0 0.17	>>>shift right
+     [java] 0.1 0.09 0.12 0.15	boolean value
+     [java] 0.1 0.1 0.0 0.16	foregoing examples
+     [java] 0.1 0.09 0.0 0.16	bitlogic example
+     [java] 0.1 0.2 0.0 0.05	xor operation
+     [java] 0.1 0.03 0.18 0.14	byte value
+     [java] 0.1 0.0 0.08 0.17	shift
+     [java] 0.1 0.0 0.29 0.0	+
+     [java] 0.1 0.09 0.0 0.15	nonzero value
+     [java] 0.1 0.09 0.0 0.15	previous value
+     [java] 0.1 0.06 0.0 0.16	fractional component
+     [java] 0.1 0.09 0.0 0.15	numeric value
+     [java] 0.1 0.03 0.0 0.16	unary minus
+     [java] 0.1 0.03 0.0 0.16	minus operator
+     [java] 0.1 0.16 0.0 0.09	easy way
+     [java] 0.1 0.16 0.0 0.09	easiest way
+     [java] 0.1 0.19 0.0 0.06	top bit
+     [java] 0.1 0.11 0.0 0.13	right shift operator
+     [java] 0.1 0.0 0.16 0.13	right
+     [java] 0.1 0.04 0.0 0.15	useful attribute
+     [java] 0.1 0.04 0.0 0.15	interesting attribute
+     [java] 0.1 0.09 0.0 0.14	first row
+     [java] 0.1 0.11 0.0 0.13	right end
+     [java] 0.1 0.09 0.0 0.14	first operand
+     [java] 0.1 0.09 0.0 0.14	first shift
+     [java] 0.1 0.1 0.02 0.13	right shift
+     [java] 0.1 0.07 0.02 0.14	unexpected results
+     [java] 0.1 0.07 0.0 0.14	int result
+     [java] 0.1 0.07 0.0 0.14	low-order bits
+     [java] 0.1 0.06 0.0 0.14	low-order byte
+     [java] 0.1 0.04 0.06 0.14	negative numbers
+     [java] 0.1 0.15 0.0 0.08	careful reading
+     [java] 0.1 0.05 0.0 0.14	negative numbersand
+     [java] 0.1 0.04 0.0 0.14	negative zero
+     [java] 0.1 0.04 0.0 0.14	negative values
+     [java] 0.1 0.04 0.0 0.14	negative byte
+     [java] 0.1 0.09 0.12 0.1	high-order bit
+     [java] 0.1 0.09 0.12 0.09	assignment operator
+     [java] 0.1 0.03 0.0 0.14	byte value
+     [java] 0.1 0.16 0.0 0.05	last expression sets e
+     [java] 0.1 0.02 0.02 0.14	byte b
+     [java] 0.1 0.03 0.0 0.14	byte e
+     [java] 0.1 0.02 0.0 0.14	byte c
+     [java] 0.1 0.12 0.0 0.09	string binary [
+     [java] 0.1 0.12 0.0 0.09	correct string representation
+     [java] 0.1 0.03 0.02 0.13	right-hand operand
+     [java] 0.1 0.14 0.0 0.07	program converts
+     [java] 0.1 0.03 0.0 0.13	right-hand expression
+     [java] 0.1 0.08 0.0 0.11	array indexing
+     [java] 0.1 0.07 0.0 0.12	double dc
+     [java] 0.1 0.07 0.0 0.12	double db
+     [java] 0.1 0.07 0.0 0.12	double dd
+     [java] 0.1 0.07 0.0 0.12	double y
+     [java] 0.1 0.07 0.0 0.12	double da
+     [java] 0.1 0.11 0.0 0.09	several assignment operators
+     [java] 0.1 0.11 0.0 0.1	boolean g
+     [java] 0.1 0.11 0.0 0.09	string array
+     [java] 0.1 0.11 0.0 0.1	int g
+     [java] 0.1 0.11 0.0 0.09	string representation
+     [java] 0.1 0.07 0.0 0.11	special ternary( three-way
+     [java] 0.1 0.07 0.0 0.11	certain special situations
+     [java] 0.1 0.09 0.0 0.1	high-order position
+     [java] 0.1 0.09 0.02 0.1	high-order bit
+     [java] 0.1 0.09 0.0 0.1	high-order bytes
+     [java] 0.1 0.09 0.02 0.1	+ k
+     [java] 0.1 0.05 0.0 0.12	efficient alternative
+     [java] 0.1 0.06 0.0 0.11	special properties
+     [java] 0.1 0.09 0.0 0.09	assignment expression
+     [java] 0.1 0.06 0.0 0.11	special operators
+     [java] 0.1 0.04 0.02 0.11	| ba
+     [java] 0.1 0.04 0.0 0.11	resultant bit
+     [java] 0.1 0.02 0.02 0.11	hex[( b
+     [java] 0.1 0.02 0.0 0.11	hex[( e
+     [java] 0.1 0.06 0.06 0.1	code fragment
+     [java] 0.1 0.02 0.0 0.11	hex[( c
+     [java] 0.1 0.01 0.04 0.11	array
+     [java] 0.1 0.07 0.0 0.1	next code fragment
+     [java] 0.1 0.0 0.02 0.11	a&b
+     [java] 0.1 0.0 0.02 0.11	a|b
+     [java] 0.1 0.07 0.0 0.09	,which means
+     [java] 0.1 0.07 0.02 0.1	int e
+     [java] 0.1 0.08 0.0 0.09	left shift operator
+     [java] 0.1 0.07 0.0 0.1	boolean e
+     [java] 0.1 0.07 0.0 0.1	+ e
+     [java] 0.1 0.07 0.0 0.1	+ e
+     [java] 0.1 0.07 0.06 0.09	left shift
+     [java] 0.1 0.05 0.02 0.1	int x
+     [java] 0.1 0.04 0.0 0.1	normal sign extension
+     [java] 0.1 0.07 0.0 0.09	left operand
+     [java] 0.1 0.0 0.08 0.09	assignment
+     [java] 0.1 0.03 0.0 0.1	normal precedence
+     [java] 0.1 0.11 0.0 0.05	table 4-1
+     [java] 0.1 0.0 0.1 0.09	position
+     [java] 0.1 0.11 0.0 0.05	reason java
+     [java] 0.1 0.08 0.02 0.08	dot operator
+     [java] 0.1 0.0 0.06 0.1	e
+     [java] 0.1 0.04 0.0 0.1	boolean logical values
+     [java] 0.1 0.1 0.0 0.06	standard practice
+     [java] 0.1 0.04 0.0 0.1	nonnumeric values
+     [java] 0.1 0.03 0.0 0.1	smaller values
+     [java] 0.1 0.05 0.08 0.08	increment operator
+     [java] 0.1 0.11 0.0 0.04	bitwise complement
+     [java] 0.1 0.0 0.02 0.09	way
+     [java] 0.1 0.1 0.0 0.05	previous chapter
+     [java] 0.1 0.0 0.16 0.0	int
+     [java] 0.1 0.04 0.0 0.08	!a&b|a& !b
+     [java] 0.1 0.07 0.0 0.07	variables x
+     [java] 0.1 0.06 0.0 0.07	modulus operator
+     [java] 0.1 0.07 0.0 0.07	variable b
+     [java] 0.1 0.01 0.06 0.08	increment
+     [java] 0.1 0.06 0.0 0.07	boolean f
+     [java] 0.1 0.06 0.0 0.07	+ f
+     [java] 0.1 0.06 0.0 0.07	int f
+     [java] 0.1 0.04 0.0 0.07	more ones
+     [java] 0.1 0.06 0.0 0.07	same logical rules
+     [java] 0.1 0.04 0.0 0.07	prefix form
+     [java] 0.1 0.01 0.0 0.08	~a&b|a&~b
+     [java] 0.1 0.08 0.0 0.05	unpleasant surprises
+     [java] 0.1 0.05 0.0 0.07	following bit pattern
+     [java] 0.1 0.0 0.14 0.0	|
+     [java] 0.1 0.0 0.14 0.0	> >
+     [java] 0.1 0.0 0.0 0.08	~a
+     [java] 0.1 0.0 0.0 0.08	!a
+     [java] 0.1 0.07 0.0 0.06	sample program
+     [java] 0.1 0.07 0.02 0.05	char hex[ ]
+     [java] 0.1 0.04 0.0 0.07	following table
+     [java] 0.1 0.04 0.02 0.07	same operation
+     [java] 0.1 0.06 0.0 0.05	basic arithmetic operationsaddition
+     [java] 0.1 0.0 0.08 0.06	y
+     [java] 0.1 0.04 0.02 0.07	same way
+     [java] 0.1 0.04 0.0 0.07	following expressions
+     [java] 0.1 0.01 0.1 0.05	parentheses
+     [java] 0.1 0.05 0.0 0.06	c/c++ background
+     [java] 0.1 0.08 0.0 0.03	past bit position
+     [java] 0.1 0.04 0.0 0.07	same type
+     [java] 0.1 0.06 0.0 0.05	basic arithmetic operators
+     [java] 0.1 0.03 0.06 0.06	arithmetic operators
+     [java] 0.1 0.01 0.02 0.07	version
+     [java] 0.1 0.05 0.0 0.06	equality test
+     [java] 
+
+BUILD SUCCESSFUL
+Total time: 17 seconds
