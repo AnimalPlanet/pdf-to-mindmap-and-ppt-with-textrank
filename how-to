@@ -1,5 +1,5 @@
 created new eclipse project : textrank-from-scratch
 imported the folders one by one : src res test classes lib and whatever else was there
 added all the jars in lib directory to build path (right click-->build path-->configure build path--> libraries-->add jars)
-changed 4 lines in TextRank.java file instead of command line arguments gave hardcoded arguments
+changed 4 lines in TextRank.java file main method instead of command line arguments gave hardcoded arguments
 right click project--> run
