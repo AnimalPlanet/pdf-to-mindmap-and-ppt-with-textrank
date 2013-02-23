@@ -141,7 +141,7 @@ public class
 		dist_stats.getStandardDeviation() / Math.sqrt((double) dist_stats.getN());
 
 	    if (LOG.isInfoEnabled()) {
-		LOG.info("iteration: " + k + " error: " + standard_error);
+		//LOG.info("iteration: " + k + " error: " + standard_error);
 	    }
 
 	    // swap in new rank values
@@ -193,10 +193,10 @@ public class
 	    }
 
 	    if (LOG.isDebugEnabled()) {
-		LOG.debug("n: " + n1.key + " " + n1.rank + " " + n1.marked);
+		//LOG.debug("n: " + n1.key + " " + n1.rank + " " + n1.marked);
 
 		for (Node n2 : n1.edges) {
-		    LOG.debug(" - " + n2.key);
+		    //LOG.debug(" - " + n2.key);
 		}
 	    }
 	}

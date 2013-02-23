@@ -38,6 +38,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -88,7 +89,7 @@ public class
 
     public final static String NLP_RESOURCES = "nlp.resources";
     public final static double MIN_NORMALIZED_RANK = 0.05D;
-    public final static int MAX_NGRAM_LENGTH = 5;
+    public final static int MAX_NGRAM_LENGTH = 5; //originally 5 reducing it below 4 means only 10-15 keywords, 5 and above gives same result many many keywords
     public final static long MAX_WORDNET_TEXT = 2000L;
     public final static long MAX_WORDNET_GRAPH = 600L;
 
@@ -216,8 +217,8 @@ public class
 	markTime("basic_textrank");
 
 	if (LOG.isInfoEnabled()) {
-	    LOG.info("TEXT_BYTES:\t" + text.length());
-	    LOG.info("GRAPH_SIZE:\t" + graph.size());
+	   // LOG.info("TEXT_BYTES:\t" + text.length());
+	   // LOG.info("GRAPH_SIZE:\t" + graph.size());
 	}
 
 	//////////////////////////////////////////////////
@@ -297,16 +298,16 @@ public class
 
 	if (LOG.isInfoEnabled()) {
 	    if (LOG.isDebugEnabled()) {
-		LOG.debug("RANK: " + ngram_subgraph.dist_stats);
+		//LOG.debug("RANK: " + ngram_subgraph.dist_stats);
 
 		for (Node n : new TreeSet<Node>(ngram_subgraph.values())) {
 		    final NGram gram = (NGram) n.value;
-		    LOG.debug(gram.getCount() + " " + n.rank + " " + gram.text /* + " @ " + gram.renderContexts() */);
+		  //  LOG.debug(gram.getCount() + " " + n.rank + " " + gram.text /* + " @ " + gram.renderContexts() */);
 		}
 	    }
 
 	    if (LOG.isDebugEnabled()) {
-		LOG.debug("RANK: " + synset_subgraph.dist_stats);
+		//LOG.debug("RANK: " + synset_subgraph.dist_stats);
 
 		for (Node n : new TreeSet<Node>(synset_subgraph.values())) {
 		    final SynsetLink s = (SynsetLink) n.value;
@@ -375,7 +376,7 @@ public class
 	elapsed_time = System.currentTimeMillis() - start_time;
 
 	if (LOG.isInfoEnabled()) {
-	    LOG.info("ELAPSED_TIME:\t" + elapsed_time + "\t" + label);
+	    //LOG.info("ELAPSED_TIME:\t" + elapsed_time + "\t" + label);
 	}
     }
 
@@ -528,8 +529,16 @@ public class
 	    return;
 	}
 
-	LOG.info("\n" + tr);
+	//LOG.info("\n" + tr);
 
+	File outputFile = new File(data_file+".key");
+	FileWriter writer = new FileWriter(outputFile);
+	writer.write("\n" + tr);
+	writer.flush();
+	writer.close();
+	//System.out.println("***\n" + tr+"***");
+
+	
 	if (LOG.isDebugEnabled()) {
 	    for (Sentence s : s_list) {
 		LOG.debug(s.text);
