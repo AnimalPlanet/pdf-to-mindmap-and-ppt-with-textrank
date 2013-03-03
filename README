@@ -3,14 +3,17 @@ This project contains modifications to open source textrank implementation for a
 To run it, compile using eclipse, and run the TextRank.java file. 
 You must give path of a .txt file as command line argument which is the source file on which textrank algorithm will be run.
 
+Alternatively you can run Main.java file.
+give path of a folder as input
 -------------------------------------------------------------------
 
 Modifications made to original source so far:
 
-1) TextRank.java main method. All command line arguments changed to hardcoded ones except source file.
+1) TextRank.java main method. All command line arguments changed to hardcoded ones(except source file)
 2) Added Main.java file. input is a path taken from console. recursively traverses the directory structure 
 represented by the path. all txt files found are sent to textrank algorithm
 3) Log.info and log.debug lines are the ones printing output to console. commenting out those lines removes unwanted lines from output
-4)1st line MessageLog..... source unknown yet
-5)log.info("\n"+tr); in TextRank.java is the line that prints the entire list of keywords. changed that to FileWriter line which outputs to file of same name as input file plus a .key in the end. location of file is same as input txt file. 
- 
+4) 1st line MessageLog..... source unknown yet(But it displays on console and is not written to file hence doesn't spoil required output in file)
+5) log.info("\n"+tr); in TextRank.java is the line that prints the entire list of keywords. changed that to FileWriter line which outputs to file of same name as input file plus a .key in the end. location of file is same as input txt file. 
+
+6) earlier keywords used to be displayed along with weights and normalized values. that has been removed by modifying a line in toString() method in TextRank.java 

@@ -449,7 +449,13 @@ public class
 
 	for (MetricVector mv : key_phrase_list) {
 	    if (mv.metric >= MIN_NORMALIZED_RANK) {
-		sb.append(mv.render()).append("\t").append(mv.value.text).append("\n");
+	    	
+	    	/*the commented line below displays weights etc along with the keyphrases
+	    	 * instead replacing it with the line that follows gives just newline separated list of keywords
+	    	 * */
+	    	
+	    	//sb.append(mv.render()).append("\t").append(mv.value.text).append("\n");    
+	    	sb.append(mv.value.text).append("\n");
 	    }
 	}
 
