@@ -1,0 +1,12 @@
+<map>
+	<node TEXT="animal">
+		<node TEXT="elephant">
+			<node TEXT="african"/>
+			<node TEXT="indian"/>
+		</node>
+		<node TEXT="dog">
+			<node TEXT="chihuahua"/>
+			<node TEXT="pug"/>
+		<node>
+	</node>
+</map>

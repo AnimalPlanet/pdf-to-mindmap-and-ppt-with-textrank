@@ -16,4 +16,19 @@ represented by the path. all txt files found are sent to textrank algorithm
 4) 1st line MessageLog..... source unknown yet(But it displays on console and is not written to file hence doesn't spoil required output in file)
 5) log.info("\n"+tr); in TextRank.java is the line that prints the entire list of keywords. changed that to FileWriter line which outputs to file of same name as input file plus a .key in the end. location of file is same as input txt file. 
 
-6) earlier keywords used to be displayed along with weights and normalized values. that has been removed by modifying a line in toString() method in TextRank.java 
+--
+
+6) earlier keywords used to be displayed along with weights and normalized values. that has been removed by modifying a line in toString() method in TextRank.java
+
+--
+
+7)output changed from simple list of keywords to xml style tags
+ Earlier:
+ a
+ b
+ c
+ 
+ Now:
+ <node text="a"/>
+ <node text="b"/>
+ <node text="c"/>

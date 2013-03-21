@@ -455,7 +455,7 @@ public class
 	    	 * */
 	    	
 	    	//sb.append(mv.render()).append("\t").append(mv.value.text).append("\n");    
-	    	sb.append(mv.value.text).append("\n");
+	    	sb.append("<node text=\"").append(mv.value.text).append("\"/>").append("\n");
 	    }
 	}
 
