@@ -41,6 +41,6 @@ represented by the path. all txt files found are sent to textrank algorithm
  9) freemind mindmap xml tags added to output
  10) few more console output statements added for development ease
  11) non txt files etc are skipped
+ 12) alternate left and right positioning of nodes to make mindmap more visually appealing(earlier everything was on left)
  
- todo: alternate left and right position for nodes so that mindmap looks more appealing.
- 		skip empty folders etc
+ todo: skip empty folders etc

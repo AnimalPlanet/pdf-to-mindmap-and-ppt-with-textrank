@@ -50,6 +50,7 @@ public class Main {
 		{//it is a folder
 			
 			File folderContents[] = fileOrFolder.listFiles();
+			String position = "right";
 			//iterate through contents of folder
 			for(int i=0; i<folderContents.length;i++)
 			{
@@ -58,7 +59,8 @@ public class Main {
 					//recursive call if another folder found
 					String directoryName = folderContents[i].getName();
 					System.out.println("directory found: "+directoryName);
-					writer.write("<node text=\""+directoryName+"\" position=\"left\">");
+					writer.write("<node text=\""+directoryName+"\" position=\""+position+"\">");
+					position = (position.equals("right")?"left":"right");
 					traverseFileSystem(currentPath+"/"+folderContents[i].getName());
 					writer.write("</node>");
 				}
@@ -67,7 +69,9 @@ public class Main {
 					//send to textrank algorithm if file found
 					String fileName = folderContents[i].getName();
 					System.out.println("file found: "+fileName);
-					sendToTextRank(currentPath,fileName);
+					sendToTextRank(currentPath,fileName,position);
+					position = (position.equals("right")?"left":"right");
+					
 				}
 				
 			}
@@ -85,7 +89,7 @@ public class Main {
 	
 	
 	
-	public static void sendToTextRank(String currentPath,String filename) throws Exception
+	public static void sendToTextRank(String currentPath,String filename,String position) throws Exception
 	{
 		//if file ends in .txt run the keyword extraction algorithm on it
 		   int l = filename.length();
@@ -95,7 +99,7 @@ public class Main {
 			   System.out.println("Textfile. Running algorithm on it...");
 			   
 			   String data_file = currentPath+"/"+filename; 
-				writer.write("<node text=\""+filename+"\">");
+				writer.write("<node text=\""+filename+"\" position=\""+position+"\">");
 				
 			   TextRank.runTextrank(data_file,writer); //calling algo
 				writer.write("</node>");
@@ -121,6 +125,9 @@ public class Main {
 		writer.write("</map>");
 		writer.flush();
 		writer.close();
+		
+		Process p = new ProcessBuilder("freemind",path+"/output.mm").start();
+		System.out.println("Done!");
 	}
 	
 }
