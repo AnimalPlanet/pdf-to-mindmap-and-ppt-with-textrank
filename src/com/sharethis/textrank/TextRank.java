@@ -471,7 +471,7 @@ public class
      * Main entry point.
      */
 
-    public static void main (final String[] args)
+    public static void runTextrank (final String data_file,FileWriter writer)
 	throws Exception
     {
 	/** /
@@ -482,7 +482,7 @@ public class
 	final String log4j_conf = "res/log4j.properties";//args[0];
 	final String res_path = "res"; //args[1];
 	final String lang_code = "en"; //args[2];
-	final String data_file = args[0];
+	//final String data_file = args[0];
 	final String graph_file = "joshjdevl-textrank-ab5afac/graph.tsv";//args[4];
 
         // set up logging for debugging and instrumentation
@@ -490,8 +490,12 @@ public class
         PropertyConfigurator.configure(log4j_conf);
 
 	// load the sample text from a file
-
-	final String text = IOUtils.readFile(data_file);
+    //reads from inputted path in data_file and stores all contents in string text
+	final String text = IOUtils.readFile(data_file);  
+	
+	//System.out.println("-------------------------------------------------------------------------------");
+	//System.out.println(text);
+	//System.out.println("-------------------------------------------------------------------------------");
 
 	// filter out overly large files
 
@@ -537,11 +541,13 @@ public class
 
 	//LOG.info("\n" + tr);
 
-	File outputFile = new File(data_file+".key");
-	FileWriter writer = new FileWriter(outputFile);
-	writer.write("\n" + tr);
-	writer.flush();
-	writer.close();
+	//File outputFile = new File(data_file+".key");
+	//FileWriter writer = new FileWriter(outputFile);
+	
+	writer.write(tr.toString());
+	
+	//writer.flush();
+	//writer.close();
 	//System.out.println("***\n" + tr+"***");
 
 	

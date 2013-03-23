@@ -32,3 +32,15 @@ represented by the path. all txt files found are sent to textrank algorithm
  <node text="a"/>
  <node text="b"/>
  <node text="c"/>
+ 
+ 
+ 
+ --
+ 
+ 8) instead of separate files for list of keywords output now all output goes to one single output file
+ 9) freemind mindmap xml tags added to output
+ 10) few more console output statements added for development ease
+ 11) non txt files etc are skipped
+ 
+ todo: alternate left and right position for nodes so that mindmap looks more appealing.
+ 		skip empty folders etc
