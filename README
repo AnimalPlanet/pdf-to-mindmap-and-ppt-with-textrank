@@ -50,6 +50,14 @@ represented by the path. all txt files found are sent to textrank algorithm
 
 13) pdf to text (AccessBookmarks.java and pdfBox API) integrated with text to mindmap. New class pdfToMindmap.java created to call other classes.
 
-Bugs: Last leaf bug in pdf to text
-xml parsing exception when keywords contain special characters like  < etc. Need to add excape characters.
+---
+
+14) last leaf bug solved. static variables String previousPath and PDOutlineItem start used for this. (For now the action is just a print statement and not write to file ; faster execution hence faster testing)
+
+
+Bugs: xml parsing exception when keywords contain special characters like  < etc. Need to add excape characters.
+
 Filenames with illegal characters or " etc give problem. Escape characters required.
+
+different pdfs have different structure, some have single child under root; inside which all the content is present; for others, there are many children of root itself.
+Thus need to make code flexible for both types.

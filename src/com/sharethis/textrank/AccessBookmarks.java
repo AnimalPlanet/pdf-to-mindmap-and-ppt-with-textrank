@@ -19,7 +19,7 @@ public class AccessBookmarks {
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter absolute path of input pdf(code might malfunction if you give relative path!): ");
-		String inputPdf = "/home/lekha/Documents/files/java.pdf";//br.readLine();
+		String inputPdf = "/home/lekha/Documents/files/android.pdf";//br.readLine();
 		splitAndExtractPdf(inputPdf);
 		
 	}
@@ -30,9 +30,8 @@ public class AccessBookmarks {
 			
 			PDDocumentOutline root = doc.getDocumentCatalog().getDocumentOutline();
 			PDOutlineItem item = root.getFirstChild();
-				
-			handleItem(item,path);
-			
+			handleItemMODIFIED(item,path);
+			System.out.println("-------------Done!-------------");
 			return ( path + "/" + item.getTitle() );
 			
 	 }
@@ -51,6 +50,7 @@ public class AccessBookmarks {
 			
 			PDFTextStripper stripper = new PDFTextStripper();
 			String outputFilename = item.getTitle()+".txt";
+			
 			System.out.println(outputFilename);
 			
 			//replace below code to remove all illegal characters from filename (if any)
@@ -59,7 +59,6 @@ public class AccessBookmarks {
 			
 			//code to be replaced ends here
 			
-			//System.out.println("000000000"+outputFilename);
 			
 			FileWriter outputStream = new FileWriter(new File(path+"/"+outputFilename));
 			stripper.setStartBookmark(item);
@@ -79,6 +78,77 @@ public class AccessBookmarks {
 			while(child != null)
 			{
 				handleItem(child,path);
+				child = child.getNextSibling();
+			}
+		}
+		
+		
+	}
+	
+	static PDOutlineItem start = null;
+	static String previousPath = null;
+	
+	public static void handleItemMODIFIED(PDOutlineItem item, String path) throws IOException
+	{
+		if(item == null)
+		{
+			System.out.println("Error: The item is null!");
+			return;
+		}
+		if(item.getFirstChild() == null)
+		{
+			PDOutlineItem end = item;
+			if(start != null)
+			{
+			PDFTextStripper stripper = new PDFTextStripper();
+			FileWriter writer = new FileWriter(new File(previousPath + "/" + start.getTitle()));
+			stripper.setStartBookmark(start);
+			stripper.setEndBookmark(end);
+			System.out.println("***"+start.getTitle()+"  to  "+end.getTitle()+"  --->  "+previousPath);//stripper.writeText(doc, writer);
+			writer.flush();
+			writer.close();
+			}
+			
+			start = end;
+			previousPath = path;
+			
+			/*
+			
+			//it is a leaf
+			System.out.println("Leaf: "+item.getTitle());
+			
+			PDFTextStripper stripper = new PDFTextStripper();
+			String outputFilename = item.getTitle()+".txt";
+			
+			System.out.println(outputFilename);
+			
+			//replace below code to remove all illegal characters from filename (if any)
+			outputFilename = outputFilename.replace(',', ' ');
+			outputFilename = outputFilename.replace('/', ' ');
+			
+			//code to be replaced ends here
+			
+			
+			FileWriter outputStream = new FileWriter(new File(path+"/"+outputFilename));
+			stripper.setStartBookmark(item);
+			//the problem below is that for a node with no next sibling we get text starting from the node to end of book whereas we just want from the node to next node
+			stripper.setEndBookmark(item.getNextSibling());
+			stripper.writeText(doc, outputStream);
+			outputStream.flush();
+			outputStream.close();
+			
+			*/
+		}
+		else
+		{// internal node : iterate through children and recurse
+			
+			path = path+"/"+item.getTitle();
+			File dir = new File(path);
+			dir.mkdir();
+			PDOutlineItem child = item.getFirstChild();
+			while(child != null)
+			{
+				handleItemMODIFIED(child,path);
 				child = child.getNextSibling();
 			}
 		}
