@@ -3,6 +3,7 @@ package com.sharethis.textrank;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
@@ -24,15 +25,15 @@ public class Main {
 	 * user enters path of a folder
 	 * class variable is initialized with the user input
 	 */
-	public static void getPathFromUser() throws Exception
+	public static void initialize(String path) throws IOException
 	{
-		System.out.println("Input a folders path. The code will traverse the folder, going into each subfolder till infinite depth."+
-				" It separately runs textrank on each txt file and outputs mindmap style xml maintaining folders tree structure."+
-				"\nEnter path:");
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		path = "/home/lekha/Documents/files";//br.readLine();
+		
 		output_file = new File(path + "/output.mm");
 		writer = new FileWriter(output_file);
+		System.out.println("Path obtained:"+path);
+		writer.write("<map version=\"0.9.0\">");
+		writer.write("<node text=\""+path.substring(path.lastIndexOf('/') + 1)+"\">");
+		
 		
 	}
 	
@@ -114,13 +115,8 @@ public class Main {
 	}
 	
 	
-	public static void main(String[] args) throws Exception
+	public static void terminateAndLaunchFreemind() throws IOException
 	{
-		getPathFromUser();
-		writer.write("<map version=\"0.9.0\">");
-		System.out.println("Path obtained:"+path);
-		writer.write("<node text=\""+path.substring(path.lastIndexOf('/') + 1)+"\">");
-		traverseFileSystem(path);
 		writer.write("</node>");
 		writer.write("</map>");
 		writer.flush();
@@ -128,6 +124,27 @@ public class Main {
 		
 		Process p = new ProcessBuilder("freemind",path+"/output.mm").start();
 		System.out.println("Done!");
+		
+	}
+	
+	public static void main(String[] args) throws Exception
+	{
+		System.out.println("Input a folders path. The code will traverse the folder, going into each subfolder till infinite depth."+
+				" It separately runs textrank on each txt file and outputs mindmap style xml maintaining folders tree structure."+
+				"\nEnter path:");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		path = "/home/lekha/Documents/files";//br.readLine();
+		
+		runAlgorithm(path);
+		
+	}
+	
+	public static void runAlgorithm(String path) throws Exception
+	{
+		initialize(path);
+		traverseFileSystem(path);
+		terminateAndLaunchFreemind();
+		
 	}
 	
 }

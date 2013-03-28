@@ -15,5 +15,6 @@
 	<classpathentry kind="lib" path="lib/sharethis-common.jar"/>
 	<classpathentry kind="lib" path="lib/sptoolkit.jar"/>
 	<classpathentry kind="lib" path="lib/trove-2.0.2.jar"/>
+	<classpathentry kind="lib" path="/home/lekha/dls/pdfbox-app-1.7.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
