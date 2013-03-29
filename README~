@@ -44,3 +44,29 @@ represented by the path. all txt files found are sent to textrank algorithm
  12) alternate left and right positioning of nodes to make mindmap more visually appealing(earlier everything was on left)
  
  todo: skip empty folders etc
+
+
+--
+
+13) pdf to text (AccessBookmarks.java and pdfBox API) integrated with text to mindmap. New class pdfToMindmap.java created to call other classes.
+
+---
+
+14) last leaf bug solved. static variables String previousPath and PDOutlineItem start used for this. (For now the action is just a print statement and not write to file ; faster execution hence faster testing)
+
+
+Bugs: xml parsing exception when keywords contain special characters like  < etc. Need to add excape characters.
+Filenames with illegal characters or " etc give problem. Escape characters required.
+
+
+---
+
+15)different pdfs have different structure, some have single child under root; inside which all the content is present; for others, there are many children of root itself.
+Thus need to make code flexible for both types.
+
+The above issue was solved using one more loop enclosing recursive call. 
+
+handleLastLeaf() function added to add a last-leaf to null text extraction.
+
+
+

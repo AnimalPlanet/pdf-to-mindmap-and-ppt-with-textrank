@@ -19,7 +19,7 @@ public class AccessBookmarks {
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter absolute path of input pdf(code might malfunction if you give relative path!): ");
-		String inputPdf = "/home/lekha/Documents/files/android.pdf";//br.readLine();
+		String inputPdf = "/home/lekha/Documents/files/ecom.pdf";//br.readLine();
 		splitAndExtractPdf(inputPdf);
 		
 	}
@@ -28,14 +28,39 @@ public class AccessBookmarks {
 		 String path = inputPdf.substring(0,inputPdf.lastIndexOf('/'));
 			doc = PDDocument.load(inputPdf);
 			
+			String name = doc.getDocumentInformation().getTitle();
+			System.out.println("name of the book: "+name);
+			
+			
 			PDDocumentOutline root = doc.getDocumentCatalog().getDocumentOutline();
+			path = path+"/"+name;
+			File dir = new File(path);
+			dir.mkdir();
+			
 			PDOutlineItem item = root.getFirstChild();
+			while(item !=null)
+			{
 			handleItemMODIFIED(item,path);
+			item = item.getNextSibling();
+			}
+			handleLastLeaf();
 			System.out.println("-------------Done!-------------");
-			return ( path + "/" + item.getTitle() );
+			return (path);
 			
 	 }
 	
+	 public static void handleLastLeaf() throws IOException
+	 {
+		 	PDFTextStripper stripper = new PDFTextStripper();
+			FileWriter writer = new FileWriter(new File(previousPath + "/" + start.getTitle() +".txt"));
+			stripper.setStartBookmark(start);
+			stripper.setEndBookmark(null);
+			//System.out.println("***"+start.getTitle()+"  to  *THE END*  --->  "+previousPath);
+			stripper.writeText(doc, writer);
+			writer.flush();
+			writer.close();
+			
+	 }
 	public static void handleItem(PDOutlineItem item, String path) throws IOException
 	{
 		if(item == null)
@@ -97,14 +122,16 @@ public class AccessBookmarks {
 		}
 		if(item.getFirstChild() == null)
 		{
+			//leaf
 			PDOutlineItem end = item;
 			if(start != null)
 			{
 			PDFTextStripper stripper = new PDFTextStripper();
-			FileWriter writer = new FileWriter(new File(previousPath + "/" + start.getTitle()));
+			FileWriter writer = new FileWriter(new File(previousPath + "/" + start.getTitle()+".txt"));
 			stripper.setStartBookmark(start);
 			stripper.setEndBookmark(end);
-			System.out.println("***"+start.getTitle()+"  to  "+end.getTitle()+"  --->  "+previousPath);//stripper.writeText(doc, writer);
+			//System.out.println("***"+start.getTitle()+"  to  "+end.getTitle()+"  --->  "+previousPath);
+			stripper.writeText(doc, writer);
 			writer.flush();
 			writer.close();
 			}

@@ -56,8 +56,19 @@ represented by the path. all txt files found are sent to textrank algorithm
 
 
 Bugs: xml parsing exception when keywords contain special characters like  < etc. Need to add excape characters.
-
 Filenames with illegal characters or " etc give problem. Escape characters required.
 
-different pdfs have different structure, some have single child under root; inside which all the content is present; for others, there are many children of root itself.
+
+---
+
+15)different pdfs have different structure, some have single child under root; inside which all the content is present; for others, there are many children of root itself.
 Thus need to make code flexible for both types.
+
+The above issue was solved using one more loop enclosing recursive call. 
+
+handleLastLeaf() function added to add a last-leaf to null text extraction.
+
+--
+
+16) position left, right of mindmap nodes removed for better presentation
+17) gui class created but not integrated yet
