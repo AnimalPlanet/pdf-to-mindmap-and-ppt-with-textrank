@@ -55,10 +55,6 @@ represented by the path. all txt files found are sent to textrank algorithm
 14) last leaf bug solved. static variables String previousPath and PDOutlineItem start used for this. (For now the action is just a print statement and not write to file ; faster execution hence faster testing)
 
 
-Bugs: xml parsing exception when keywords contain special characters like  < etc. Need to add excape characters.
-Filenames with illegal characters or " etc give problem. Escape characters required.
-
-
 ---
 
 15)different pdfs have different structure, some have single child under root; inside which all the content is present; for others, there are many children of root itself.
@@ -72,3 +68,10 @@ handleLastLeaf() function added to add a last-leaf to null text extraction.
 
 16) position left, right of mindmap nodes removed for better presentation
 17) gui class created but not integrated yet
+
+--
+
+18) apache commons library StringEscapeUtils.escapeXml(String) : String - this function used to solve xmlparsing exception due to special characters in keywords.
+
+
+bugs: filenames with illegal characters give problems

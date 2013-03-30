@@ -60,6 +60,7 @@ import java.util.concurrent.TimeoutException;
 
 import net.didion.jwnl.data.POS;
 
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -455,7 +456,9 @@ public class
 	    	 * */
 	    	
 	    	//sb.append(mv.render()).append("\t").append(mv.value.text).append("\n");    
-	    	sb.append("<node text=\"").append(mv.value.text).append("\"/>").append("\n");
+	    	String keyword = mv.value.text;
+	    	keyword = StringEscapeUtils.escapeXml(keyword);
+	    	sb.append("<node text=\"").append(keyword).append("\"/>").append("\n");
 	    }
 	}
 
