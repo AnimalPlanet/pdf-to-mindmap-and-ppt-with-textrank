@@ -75,3 +75,8 @@ handleLastLeaf() function added to add a last-leaf to null text extraction.
 
 
 bugs: filenames with illegal characters give problems
+
+
+---
+
+19) GUI integrated with main code 

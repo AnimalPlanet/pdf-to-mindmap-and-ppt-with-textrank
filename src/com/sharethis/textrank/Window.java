@@ -1,8 +1,14 @@
 package com.sharethis.textrank;
-import java.awt.*;
-import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
 
 
 public class Window {
@@ -79,7 +85,20 @@ public class Window {
 
 	ok.addActionListener(new ActionListener(){
 		 	public void actionPerformed(ActionEvent e){
-		 		System.out.println("path obtained: "+txtPath.getText());
+		 		String path = txtPath.getText();
+		 		System.out.println("path obtained: "+path);
+		 		try{
+		 			
+		 		
+		 		String folder = AccessBookmarks.splitAndExtractPdf(path);
+				Main.runAlgorithm(folder);
+		 		
+				
+		 		}
+		 		catch(Exception ex)
+		 		{
+		 			System.out.println("Something seems to have gone wrong in the execution!");
+		 		}
 		 	}
 		 });
 

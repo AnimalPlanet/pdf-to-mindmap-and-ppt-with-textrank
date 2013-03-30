@@ -25,8 +25,10 @@ public class AccessBookmarks {
 	}
 	 public static String splitAndExtractPdf(String inputPdf) throws IOException
 	 {
+			 
 		 String path = inputPdf.substring(0,inputPdf.lastIndexOf('/'));
-			doc = PDDocument.load(inputPdf);
+		
+		 doc = PDDocument.load(inputPdf);
 			
 			String name = doc.getDocumentInformation().getTitle();
 			System.out.println("name of the book: "+name);
@@ -45,6 +47,7 @@ public class AccessBookmarks {
 			}
 			handleLastLeaf();
 			System.out.println("-------------Done!-------------");
+		
 			return (path);
 			
 	 }

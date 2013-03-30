@@ -142,6 +142,7 @@ public class Main {
 	
 	public static void runAlgorithm(String path) throws Exception
 	{
+		
 		initialize(path);
 		traverseFileSystem(path);
 		terminateAndLaunchFreemind();
