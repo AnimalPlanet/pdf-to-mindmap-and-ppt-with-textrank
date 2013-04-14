@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" language="java" name="com.sharethis.textrank.AccessBookmarks" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/AccessBookmarks.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="241" width="262" x="1208" y="210"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.sharethis.textrank.PdfToMindmap" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/PdfToMindmap.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1300" y="85"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.sharethis.textrank.Main" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="241" width="201" x="967" y="210"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.sharethis.textrank.TextRank" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/TextRank.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1073" y="704"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.sharethis.textrank.Context" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/Context.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="115" width="130" x="1091" y="1233"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.sharethis.textrank.Graph" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/Graph.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="912" y="1780"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.sharethis.textrank.KeyWord" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/KeyWord.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="133" width="137" x="1288" y="2638"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.sharethis.textrank.LanguageEnglish" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/LanguageEnglish.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="313" width="183" x="1596" y="2094"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.sharethis.textrank.LanguageModel" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/LanguageModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="313" width="243" x="1429" y="1741"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.sharethis.textrank.LanguageSpanish" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/LanguageSpanish.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="313" width="183" x="1373" y="2094"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.sharethis.textrank.MetricVector" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/MetricVector.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="205" width="250" x="42" y="952"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.sharethis.textrank.NGram" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/NGram.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="241" width="338" x="1049" y="952"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.sharethis.textrank.Node" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/Node.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="277" width="227" x="1030" y="2094"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.sharethis.textrank.NodeValue" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/NodeValue.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="151" width="133" x="520" y="2447"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.sharethis.textrank.Sentence" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/Sentence.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="223" width="221" x="1091" y="1478"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="16" language="java" name="com.sharethis.textrank.SynsetLink.MyRelation" 
+    project="textrank-from-scratch" file="/textrank-from-scratch/src/com/sharethis/textrank/SynsetLink.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="407" y="1278"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="17" language="java" name="com.sharethis.textrank.SynsetLink" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/SynsetLink.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="241" width="263" x="541" y="952"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.sharethis.textrank.Tester" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/Tester.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="113" x="438" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.sharethis.textrank.Window" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/Window.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1067" y="101"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.sharethis.textrank.WordNet" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/WordNet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="205" width="323" x="602" y="1233"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <nesting id="21">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="16"/>  
+  </nesting>  
+  <association id="22">    
+    <bendpoint x="1060" y="1233"/>    
+    <bendpoint x="1060" y="1478"/>    
+    <bendpoint x="1060" y="1741"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="23" name="nodes"/>      
+      <multiplicity id="24" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="25">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="26">    
+    <bendpoint x="1417" y="952"/>    
+    <bendpoint x="1417" y="1233"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="27" name="s_list"/>      
+      <multiplicity id="28" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="29">    
+    <bendpoint x="997" y="1233"/>    
+    <bendpoint x="955" y="1478"/>    
+    <bendpoint x="737" y="1741"/>    
+    <bendpoint x="737" y="2094"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </generalization>  
+  <association id="30">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="31" name="node_list"/>      
+      <multiplicity id="32" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="33">    
+    <bendpoint x="1297" y="1741"/>    
+    <bendpoint x="1297" y="2094"/>    
+    <bendpoint x="1297" y="2447"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="34">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <generalization id="35">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <dependency id="36">    
+    <bendpoint x="322" y="952"/>    
+    <bendpoint x="322" y="1233"/>    
+    <bendpoint x="322" y="1478"/>    
+    <bendpoint x="322" y="1741"/>    
+    <bendpoint x="322" y="2094"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="14"/>  
+  </generalization>  
+  <dependency id="38">    
+    <bendpoint x="834" y="952"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <association id="39">    
+    <bendpoint x="1189" y="2410"/>    
+    <bendpoint x="1243" y="2410"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="40" name="edges"/>      
+      <multiplicity id="41" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="42">    
+    <bendpoint x="1809" y="952"/>    
+    <bendpoint x="1809" y="1233"/>    
+    <bendpoint x="1809" y="1478"/>    
+    <bendpoint x="1809" y="1741"/>    
+    <bendpoint x="1809" y="2094"/>    
+    <bendpoint x="1809" y="2447"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="43">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="44" name="value"/>      
+      <multiplicity id="45" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="46">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="47">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="48">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="49" name="s"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <bendpoint x="955" y="952"/>    
+    <bendpoint x="955" y="1233"/>    
+    <bendpoint x="934" y="1478"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="52" name="ngram_subgraph"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="54">    
+    <bendpoint x="510" y="952"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="55">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <association id="56">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="57" name="metric_space"/>      
+      <multiplicity id="58" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="59">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="60" name="relation"/>      
+      <multiplicity id="61" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="62">    
+    <bendpoint x="571" y="1233"/>    
+    <bendpoint x="571" y="1478"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <association id="63">    
+    <bendpoint x="1459" y="952"/>    
+    <bendpoint x="1459" y="1233"/>    
+    <bendpoint x="1459" y="1478"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="64" name="lang"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="66">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="67">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <generalization id="68">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <association id="69">    
+    <bendpoint x="1081" y="1741"/>    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="70" name="node_list"/>      
+      <multiplicity id="71" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="72">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <generalization id="73">    
+    <bendpoint x="529" y="1233"/>    
+    <bendpoint x="529" y="1478"/>    
+    <bendpoint x="529" y="1741"/>    
+    <bendpoint x="529" y="2094"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="14"/>  
+  </generalization>  
+  <dependency id="74">    
+    <bendpoint x="1039" y="1233"/>    
+    <bendpoint x="1018" y="1478"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="75">    
+    <bendpoint x="1251" y="1233"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="76">    
+    <bendpoint x="1438" y="1233"/>    
+    <bendpoint x="1438" y="1478"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="77">    
+    <bendpoint x="550" y="1233"/>    
+    <bendpoint x="550" y="1478"/>    
+    <bendpoint x="550" y="1741"/>    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="78" name="parent"/>      
+      <multiplicity id="79" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="80">    
+    <bendpoint x="1018" y="952"/>    
+    <bendpoint x="1018" y="1233"/>    
+    <bendpoint x="1039" y="1478"/>    
+    <bendpoint x="1039" y="1741"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="81">    
+    <bendpoint x="1342" y="1233"/>    
+    <bendpoint x="1342" y="1478"/>    
+    <bendpoint x="1342" y="1741"/>    
+    <bendpoint x="1342" y="2094"/>    
+    <bendpoint x="1342" y="2447"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="82">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="83" name="contexts"/>      
+      <multiplicity id="84" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="85">    
+    <bendpoint x="976" y="952"/>    
+    <bendpoint x="976" y="1233"/>    
+    <bendpoint x="976" y="1478"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="86" name="graph"/>      
+      <multiplicity id="87" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="88">    
+    <bendpoint x="1168" y="2447"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="89">    
+    <bendpoint x="290" y="1233"/>    
+    <bendpoint x="290" y="1478"/>    
+    <bendpoint x="290" y="1741"/>    
+    <bendpoint x="290" y="2094"/>    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="90" name="value"/>      
+      <multiplicity id="91" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="92">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="93">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
