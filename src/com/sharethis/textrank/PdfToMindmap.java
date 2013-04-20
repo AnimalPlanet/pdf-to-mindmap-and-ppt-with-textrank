@@ -12,7 +12,7 @@ public class PdfToMindmap {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter absolute path of input pdf file: ");
-		String path = "/home/lekha/Documents/files/ecom.pdf"; //br.readLine();
+		String path = "D:/cpdf.pdf"; //br.readLine();
 		
 		System.out.println("Path obtained: "+path);
 		

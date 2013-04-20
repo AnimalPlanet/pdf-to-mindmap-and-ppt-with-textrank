@@ -443,11 +443,13 @@ public class
      */
 
     public String
-	toString ()
+	toString (String nameOfPpt) 
     {
 	final TreeSet<MetricVector> key_phrase_list = new TreeSet<MetricVector>(metric_space.values());
 	final StringBuilder sb = new StringBuilder();
-
+	String keywordGroup="List of keyword";
+	int i=0;
+	Presentation ppt=new Presentation();
 	for (MetricVector mv : key_phrase_list) {
 	    if (mv.metric >= MIN_NORMALIZED_RANK) {
 	    	
@@ -458,6 +460,17 @@ public class
 	    	//sb.append(mv.render()).append("\t").append(mv.value.text).append("\n");    
 	    	String keyword = mv.value.text;
 	    	keyword = StringEscapeUtils.escapeXml(keyword);
+	    	keywordGroup=keywordGroup +":"+keyword;
+	    	i++;
+	    	if (i==10)
+	    	{
+	    		try
+	    		{
+	    		ppt.addBulletPoints(keywordGroup,nameOfPpt);
+	    		keywordGroup="";
+	    		}catch(Exception E){};
+	    		i=0;
+	    	}
 	    	sb.append("<node text=\"").append(keyword).append("\"/>").append("\n");
 	    }
 	}
@@ -474,7 +487,7 @@ public class
      * Main entry point.
      */
 
-    public static void runTextrank (final String data_file,FileWriter writer)
+    public static void runTextrank (final String data_file,FileWriter writer,String nameOfPpt)
 	throws Exception
     {
 	/** /
@@ -547,7 +560,7 @@ public class
 	//File outputFile = new File(data_file+".key");
 	//FileWriter writer = new FileWriter(outputFile);
 	
-	writer.write(tr.toString());
+	writer.write(tr.toString(nameOfPpt));
 	
 	//writer.flush();
 	//writer.close();

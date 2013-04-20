@@ -19,18 +19,19 @@ public class AccessBookmarks {
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter absolute path of input pdf(code might malfunction if you give relative path!): ");
-		String inputPdf = "/home/lekha/Documents/files/ecom.pdf";//br.readLine();
+		String inputPdf = "D:/cpdf.pdf";//br.readLine();
 		splitAndExtractPdf(inputPdf);
 		
 	}
 	 public static String splitAndExtractPdf(String inputPdf) throws IOException
 	 {
-			 
+		 
 		 String path = inputPdf.substring(0,inputPdf.lastIndexOf('/'));
 		
 		 doc = PDDocument.load(inputPdf);
 			
 			String name = doc.getDocumentInformation().getTitle();
+			
 			System.out.println("name of the book: "+name);
 			
 			
