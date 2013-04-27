@@ -1,0 +1,13 @@
+<aspectj>
+	<aspects>
+		<concrete-aspect name="com.maintainj.inst.J2SEAspect" extends="com.maintainj.aspect.J2SEExecutionAspect">
+			<pointcut name="anyExecution" expression="execution(public  * *.*(..)) || execution(public  *.new(..))"/>
+			<pointcut name="beforeMain" expression="execution(public static void com.sharethis.textrank.Window.main(String[])) || execution(public static void com.sharethis.textrank.Window.main(String...))"/>
+		</concrete-aspect>
+	</aspects>
+	<weaver options="-proceedOnError -nowarn -XaddSerialVersionUID">
+		<include within="com.sharethis.textrank..*"/>
+		<include within="com.sharethis.textrank.Window"/>
+		<exclude within="com.maintainj..*"/>
+	</weaver>
+</aspectj>

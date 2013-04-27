@@ -27,13 +27,13 @@ public class Presentation {
 		Slide slide = slideShow.createSlide(); //creates a new blank slide
 		TextBox title = slide.addTitle();
 		title.setText(toWrite);
-	
+		title.setMarginTop(200);
 		HeadersFooters hdd = slideShow.getSlideHeadersFooters();  
 		hdd.setSlideNumberVisible(true);   
 		
 		
 		//the following are the 'Ctrl+S' steps for the presentation file 
-		FileOutputStream out = new FileOutputStream(nameOfPpt);   
+		FileOutputStream out = new FileOutputStream("/home/lekha/Documents/"+nameOfPpt);   
 		   slideShow.write(out);
 		   out.close();
 		
@@ -81,7 +81,7 @@ public class Presentation {
 
 	//the following are the 'Ctrl+S' steps for the presentation file named slideshow.ppt
 
-	FileOutputStream out = new FileOutputStream(nameOfPpt);   
+	FileOutputStream out = new FileOutputStream("/home/lekha/Documents/"+nameOfPpt);   
 	   slideShow.write(out);
 	   out.close();
 	}

@@ -89,3 +89,13 @@ bugs: filenames with illegal characters give problems
 ---
 21) Updated the code with the part for creating a presentation....now it creates a .ppt with the name of the book as the name of the ppt.
 just run main.java and the .ppt file will be created and stored in the project files. The only thing left now is that the code needs to output the ppt to some other folder and not the project.
+
+
+---
+
+22) New GUI class Window.java and images for buttons added
+23) chapters stored and retreived in correct sequence instead of random order thus mindmap and ppt is more organized
+
+todo: remove 2 digit count prepended to file and folder names before using the names in mindmap and ppt
+add button listener and link new GUI to backend code
+

@@ -2,21 +2,23 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/POI/New folder/poi-3.9/src/scratchpad/src"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/pdfbox/commons-lang3-3.1.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/pdfbox/pdfbox-app-1.7.1 (1).jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/commons-math-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/jaxen-1.1.1.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/jdom-1.1.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/jwnl.1.3rc3.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/log4j-1.2.15.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/maxent-2.4.0.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/opennlp-tools-1.3.0.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/porterstemmer.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/sax2.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/sharethis-common.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/sptoolkit.jar"/>
-	<classpathentry kind="lib" path="D:/ppts n notes/Final_Year_Project/eclipse workspace windows/textrank-master/lib/trove-2.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1-tests.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-math-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jdom-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jwnl.1.3rc3.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="lib/maxent-2.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/opennlp-tools-1.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/pdfbox-app-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/porterstemmer.jar"/>
+	<classpathentry kind="lib" path="lib/sax2.jar"/>
+	<classpathentry kind="lib" path="lib/sharethis-common.jar"/>
+	<classpathentry kind="lib" path="lib/sptoolkit.jar"/>
+	<classpathentry kind="lib" path="lib/trove-2.0.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

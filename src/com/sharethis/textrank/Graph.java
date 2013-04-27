@@ -63,7 +63,7 @@ public class
      */
 
     public final static double INCLUSIVE_COEFF = 0.25D;
-    public final static double KEYWORD_REDUCTION_FACTOR = 0.8D;
+    public final static double KEYWORD_REDUCTION_FACTOR = 0.02D;
     public final static double TEXTRANK_DAMPING_FACTOR = 0.85D;
     public final static double STANDARD_ERROR_THRESHOLD = 0.005D;
 

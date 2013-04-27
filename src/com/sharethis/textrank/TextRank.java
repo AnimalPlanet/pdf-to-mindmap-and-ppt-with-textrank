@@ -447,7 +447,7 @@ public class
     {
 	final TreeSet<MetricVector> key_phrase_list = new TreeSet<MetricVector>(metric_space.values());
 	final StringBuilder sb = new StringBuilder();
-	String keywordGroup="List of keyword";
+	String keywordGroup="";
 	int i=0;
 	Presentation ppt=new Presentation();
 	for (MetricVector mv : key_phrase_list) {
@@ -577,4 +577,13 @@ public class
 	    }
 	}
     }
+
+
+public static void main(String[] args) throws Exception
+{
+	FileWriter writer;
+	File output_file = new File("/home/lekha/Documents/output2.mm");//(path + "\\output.mm");
+	writer = new FileWriter(output_file);
+	 TextRank.runTextrank("/home/lekha/Documents/files/animals.txt",writer,"animals");	
+}
 }

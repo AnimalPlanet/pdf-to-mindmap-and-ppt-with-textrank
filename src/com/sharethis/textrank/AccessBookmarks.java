@@ -15,15 +15,15 @@ public class AccessBookmarks {
 
 	private static PDDocument doc;
 	
-	public static void main(String args[]) throws IOException
+	public static void main(String args[]) throws Exception
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter absolute path of input pdf(code might malfunction if you give relative path!): ");
-		String inputPdf = "D:/cpdf.pdf";//br.readLine();
+		String inputPdf = "/home/lekha/Documents/pdfs/ecom.pdf";//br.readLine();
 		splitAndExtractPdf(inputPdf);
 		
 	}
-	 public static String splitAndExtractPdf(String inputPdf) throws IOException
+	 public static String splitAndExtractPdf(String inputPdf) throws Exception
 	 {
 		 
 		 String path = inputPdf.substring(0,inputPdf.lastIndexOf('/'));
@@ -32,6 +32,8 @@ public class AccessBookmarks {
 			
 			String name = doc.getDocumentInformation().getTitle();
 			
+			if(name.equals(" "))
+				name="New Folders";
 			System.out.println("name of the book: "+name);
 			
 			
@@ -41,22 +43,24 @@ public class AccessBookmarks {
 			dir.mkdir();
 			
 			PDOutlineItem item = root.getFirstChild();
+			String count = "00";
 			while(item !=null)
 			{
-			handleItemMODIFIED(item,path);
+			handleItemMODIFIED(item,path,count);
 			item = item.getNextSibling();
+			count = NumberInString.increment(count);
 			}
-			handleLastLeaf();
+			handleLastLeaf(count);
 			System.out.println("-------------Done!-------------");
 		
 			return (path);
 			
 	 }
 	
-	 public static void handleLastLeaf() throws IOException
+	 public static void handleLastLeaf(String count) throws IOException
 	 {
 		 	PDFTextStripper stripper = new PDFTextStripper();
-			FileWriter writer = new FileWriter(new File(previousPath + "/" + start.getTitle() +".txt"));
+		 	FileWriter writer = new FileWriter(new File(previousPath + "/"+count + start.getTitle() +".txt"));
 			stripper.setStartBookmark(start);
 			stripper.setEndBookmark(null);
 			//System.out.println("***"+start.getTitle()+"  to  *THE END*  --->  "+previousPath);
@@ -83,8 +87,10 @@ public class AccessBookmarks {
 			System.out.println(outputFilename);
 			
 			//replace below code to remove all illegal characters from filename (if any)
+			
 			outputFilename = outputFilename.replace(',', ' ');
 			outputFilename = outputFilename.replace('/', ' ');
+			
 			
 			//code to be replaced ends here
 			
@@ -116,9 +122,11 @@ public class AccessBookmarks {
 	
 	static PDOutlineItem start = null;
 	static String previousPath = null;
-	
-	public static void handleItemMODIFIED(PDOutlineItem item, String path) throws IOException
+	static String savedCount = null;
+	public static void handleItemMODIFIED(PDOutlineItem item, String path,String count) throws Exception
 	{
+		System.out.println("Item found: "+item.getTitle());
+		System.out.println("count: "+count);
 		if(item == null)
 		{
 			System.out.println("Error: The item is null!");
@@ -128,10 +136,11 @@ public class AccessBookmarks {
 		{
 			//leaf
 			PDOutlineItem end = item;
+			
 			if(start != null)
 			{
 			PDFTextStripper stripper = new PDFTextStripper();
-			FileWriter writer = new FileWriter(new File(previousPath + "/" + start.getTitle()+".txt"));
+			FileWriter writer = new FileWriter(new File(previousPath + "/" + savedCount +start.getTitle()+".txt"));
 			stripper.setStartBookmark(start);
 			stripper.setEndBookmark(end);
 			//System.out.println("***"+start.getTitle()+"  to  "+end.getTitle()+"  --->  "+previousPath);
@@ -142,7 +151,7 @@ public class AccessBookmarks {
 			
 			start = end;
 			previousPath = path;
-			
+			savedCount = count;
 			/*
 			
 			//it is a leaf
@@ -173,14 +182,16 @@ public class AccessBookmarks {
 		else
 		{// internal node : iterate through children and recurse
 			
-			path = path+"/"+item.getTitle();
+			path = path+"/"+count+item.getTitle();
 			File dir = new File(path);
 			dir.mkdir();
 			PDOutlineItem child = item.getFirstChild();
+			String childCount = "00";
 			while(child != null)
 			{
-				handleItemMODIFIED(child,path);
+				handleItemMODIFIED(child,path,childCount);
 				child = child.getNextSibling();
+				childCount = NumberInString.increment(childCount);
 			}
 		}
 		

@@ -2,10 +2,11 @@ package com.sharethis.textrank;
 
 import java.io.BufferedReader;
 import java.io.File;
-//import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Comparator;
 
 //import org.apache.poi.hslf.model.Slide;
 //import org.apache.poi.hslf.model.TextBox;
@@ -27,14 +28,12 @@ public class Main {
 	private static File output_file;
 	private static FileWriter writer;
 	/*
-	 * function to accept user input from console
-	 * user enters path of a folder
-	 * class variable is initialized with the user input
+	 * class variables initialized with path of input file
 	 */
 	public static void initialize(String path) throws IOException
 	{
 		
-		output_file = new File(path + "\\output.mm");
+		output_file = new File("/home/lekha/Documents/output.mm");//(path + "\\output.mm");
 		writer = new FileWriter(output_file);
 		System.out.println("Path obtained:"+path);
 		writer.write("<map version=\"0.9.0\">");
@@ -59,10 +58,13 @@ public class Main {
 		{//it is a folder
 			
 			File folderContents[] = fileOrFolder.listFiles();
+				
+			Arrays.sort(folderContents);
+						
 			//String position = "right";
 			//iterate through contents of folder
 			for(int i=0; i<folderContents.length;i++)
-			{
+			{System.out.println(folderContents[i].lastModified());
 				if (folderContents[i].isDirectory())
 				{
 					//recursive call if another folder found
@@ -143,7 +145,7 @@ public class Main {
 		writer.flush();
 		writer.close();
 		
-		Process p = new ProcessBuilder("freemind",path+"/output.mm").start();
+		Process p = new ProcessBuilder("freemind","/home/lekha/Documents/output.mm").start();
 		System.out.println("Done!");
 		
 	}
@@ -155,7 +157,7 @@ public class Main {
 				" It separately runs textrank on each txt file and outputs mindmap style xml maintaining folders tree structure."+
 				"\nEnter path:");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		path = "D:/C Aptitude";//br.readLine();
+		path = "/home/lekha/Documents/pdfs/Electronic Commerce";//br.readLine();
 		
 		
 		runAlgorithm(path);
