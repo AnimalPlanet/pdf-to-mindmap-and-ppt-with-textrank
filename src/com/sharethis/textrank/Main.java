@@ -30,10 +30,10 @@ public class Main {
 	/*
 	 * class variables initialized with path of input file
 	 */
-	public static void initialize(String path) throws IOException
+	public static void initialize(String path,String nameOfPpt) throws IOException
 	{
 		
-		output_file = new File("/home/lekha/Documents/output.mm");//(path + "\\output.mm");
+		output_file = new File("/home/lekha/Documents/"+nameOfPpt+".mm");//(path + "\\output.mm");
 		writer = new FileWriter(output_file);
 		System.out.println("Path obtained:"+path);
 		writer.write("<map version=\"0.9.0\">");
@@ -69,6 +69,7 @@ public class Main {
 				{
 					//recursive call if another folder found
 					String directoryName = folderContents[i].getName();
+					directoryName = directoryName.substring(2);
 					//create a slide for the given directory name and add title
 					//name=name;
 					//createSlideShow(directoryName);
@@ -76,7 +77,7 @@ public class Main {
 					System.out.println("directory found: "+directoryName);
 					writer.write("<node text=\""+directoryName+"\">"); //position=\""+position+"\">");
 					//position = (position.equals("right")?"left":"right");
-					traverseFileSystem(currentPath+"/"+folderContents[i].getName(),name+" "+directoryName,nameOfPpt);
+					traverseFileSystem(currentPath+"/"+folderContents[i].getName(),name+"\n"+directoryName,nameOfPpt);
 					writer.write("</node>");
 				}
 				else
@@ -118,7 +119,7 @@ public class Main {
 			   System.out.println("Textfile. Running algorithm on it...");
 			   
 			   String data_file = currentPath+"/"+filename; 
-				writer.write("<node text=\""+filename+"\">");// position=\""+position+"\">");
+				writer.write("<node text=\""+filename.substring(2)+"\">");// position=\""+position+"\">");
 				
 			   TextRank.runTextrank(data_file,writer,nameOfPpt); //calling algo
 				writer.write("</node>");
@@ -138,14 +139,14 @@ public class Main {
 		
 	}
 	*/
-	public static void terminateAndLaunchFreemind() throws IOException
+	public static void terminateAndLaunchFreemind(String pathOfMindmap) throws IOException
 	{
 		writer.write("</node>");
 		writer.write("</map>");
 		writer.flush();
 		writer.close();
 		
-		Process p = new ProcessBuilder("freemind","/home/lekha/Documents/output.mm").start();
+		Process p = new ProcessBuilder("freemind",pathOfMindmap).start();
 		System.out.println("Done!");
 		
 	}
@@ -171,9 +172,9 @@ public class Main {
 		String [] temp=path.split("/");
 		int total=temp.length;
 		nameOfPpt=temp[total-1];
-		initialize(path);
+		initialize(path,nameOfPpt);
 		traverseFileSystem(path,ip,nameOfPpt);
-		terminateAndLaunchFreemind();
+		terminateAndLaunchFreemind("/home/lekha/Documents/"+nameOfPpt+".mm");
 		
 	}
 	
