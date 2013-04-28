@@ -33,7 +33,7 @@ public class Presentation {
 		
 		
 		//the following are the 'Ctrl+S' steps for the presentation file 
-		FileOutputStream out = new FileOutputStream("/home/lekha/Documents/output/"+nameOfPpt);   
+		FileOutputStream out = new FileOutputStream(nameOfPpt);   
 		   slideShow.write(out);
 		   out.close();
 		
@@ -82,7 +82,7 @@ public class Presentation {
 
 	//the following are the 'Ctrl+S' steps for the presentation file named slideshow.ppt
 
-	FileOutputStream out = new FileOutputStream("/home/lekha/Documents/output/"+nameOfPpt);   
+	FileOutputStream out = new FileOutputStream(nameOfPpt);   
 	   slideShow.write(out);
 	   out.close();
 	}

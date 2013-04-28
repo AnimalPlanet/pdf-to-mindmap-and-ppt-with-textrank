@@ -105,3 +105,12 @@ just run main.java and the .ppt file will be created and stored in the project f
 ---
 
 26) presentation bug fixed(less than 10 keywords set is not being truncated anymore)
+
+
+--
+
+27)output ppt and mm file now made in path of input pdf itself
+28)mindmap button of gui linked with launching of freemind
+
+---
+ 

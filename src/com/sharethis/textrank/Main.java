@@ -30,15 +30,16 @@ public class Main {
 	/*
 	 * class variables initialized with path of input file
 	 */
-	public static void initialize(String path,String nameOfPpt) throws IOException
+	public static void initialize(String inputPath,String nameOfPpt) throws IOException
 	{
 		
-		output_file = new File("/home/lekha/Documents/output/"+nameOfPpt+".mm");//(path + "\\output.mm");
+		output_file = new File(inputPath+".mm");//(path + "\\output.mm");
 		writer = new FileWriter(output_file);
-		System.out.println("Path obtained:"+path);
+		System.out.println("Path obtained:"+inputPath);
 		writer.write("<map version=\"0.9.0\">");
-		writer.write("<node text=\""+path.substring(path.lastIndexOf('/') + 1)+"\">");
 		
+		writer.write("<node text=\""+inputPath.substring(inputPath.lastIndexOf('/') + 1)+"\">");
+		System.out.println("hello");
 		
 	}
 	
@@ -140,12 +141,17 @@ public class Main {
 		
 	}
 	*/
-	public static void terminateAndLaunchFreemind(String pathOfMindmap) throws IOException
+	
+	public static void terminate() throws IOException
 	{
 		writer.write("</node>");
 		writer.write("</map>");
 		writer.flush();
 		writer.close();
+	}
+	public static void launchFreemind(String pathOfMindmap) throws IOException
+	{
+		
 		
 		Process p = new ProcessBuilder("freemind",pathOfMindmap).start();
 		System.out.println("Done!");
@@ -166,16 +172,21 @@ public class Main {
 		
 	}
 	
-	public static void runAlgorithm(String path) throws Exception
+	public static void runAlgorithm(String inputPath) throws Exception
 	{
-		String nameOfPpt;
-		String ip="";
-		String [] temp=path.split("/");
+		/*
+		String [] temp=inputPath.split("/"); // backslash for linux forward slash for windows
 		int total=temp.length;
-		nameOfPpt=temp[total-1];
-		initialize(path,nameOfPpt);
-		traverseFileSystem(path,ip,nameOfPpt);
-		terminateAndLaunchFreemind("/home/lekha/Documents/output/"+nameOfPpt+".mm");
+		String nameOfPpt=temp[total-1];
+		*/
+		String nameOfPpt = inputPath; //its same because apache poi will append a .ppt and create a ppt file at same path as input folder
+		initialize(inputPath,nameOfPpt);
+		System.out.println("initialization done in main.runalgorithm"+inputPath);
+		
+		String ip="";
+		traverseFileSystem(inputPath,ip,nameOfPpt);
+		terminate();
+		launchFreemind(inputPath+".mm");
 		
 	}
 	

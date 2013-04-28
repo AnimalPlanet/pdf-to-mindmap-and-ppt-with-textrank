@@ -6,6 +6,8 @@ import java.awt.event.ActionListener;
 
 
 public class Window {
+	
+	String folder = null ;
 	public JPanel createContentPane(){
 	JPanel p=new JPanel();
 	//p.setBackground(Color.CYAN);
@@ -61,6 +63,9 @@ public class Window {
 		 			
 		 			txtPath.setText(fileChooser.getSelectedFile().toString());
 		 		}
+		 		
+		 		//clears the folder variable since we have picked a new input pdf
+		 		folder = null;
 		 	}
 		 });
 	
@@ -81,7 +86,8 @@ public class Window {
 	 		try{
 	 			
 	 		
-	 		String folder = AccessBookmarks.splitAndExtractPdf(path);
+	 		folder = AccessBookmarks.splitAndExtractPdf(path);
+	 		System.out.println(folder);
 			Main.runAlgorithm(folder);
 	 		
 			
@@ -109,6 +115,28 @@ public class Window {
 	Icon imgicona =new ImageIcon("Freemind1.png");
 	mindMap.setIcon(imgicona);
 	buttonPanel.add(mindMap);
+	
+	mindMap.addActionListener(new ActionListener(){
+	 	public void actionPerformed(ActionEvent e){
+	 		String path = txtPath.getText();
+	 		//System.out.println("path obtained: "+path);
+	 		try{
+	 			
+	 		if(folder != null){
+	 		Main.launchFreemind(folder+".mm");
+	 		}
+	 		else
+	 		{
+	 			//error
+	 		}
+			
+	 		}
+	 		catch(Exception ex)
+	 		{
+	 			System.out.println("Something seems to have gone wrong in the execution!");
+	 		}
+	 	}
+	 });
 	
 	JButton ppt= new JButton("Presentation");	
 	ppt.setLocation(285,10);
