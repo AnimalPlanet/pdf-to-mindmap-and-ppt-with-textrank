@@ -96,6 +96,8 @@ just run main.java and the .ppt file will be created and stored in the project f
 22) New GUI class Window.java and images for buttons added
 23) chapters stored and retreived in correct sequence instead of random order thus mindmap and ppt is more organized
 
-todo: remove 2 digit count prepended to file and folder names before using the names in mindmap and ppt
-add button listener and link new GUI to backend code
+---
+
+24)removed 2 digit count prepended to file and folder names before using the names in mindmap and ppt
+25)added button listener for ok and linked new GUI to backend code
 

@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
 
-public class Window {
+public class Window2 {
 	public JPanel createContentPane(){
 	JPanel p=new JPanel();
 	p.setLayout(null);

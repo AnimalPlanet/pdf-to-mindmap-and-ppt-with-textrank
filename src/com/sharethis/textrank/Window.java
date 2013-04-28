@@ -74,8 +74,26 @@ public class Window {
 	middlePanel.add(ok);
 	
 
-	
+	ok.addActionListener(new ActionListener(){
+	 	public void actionPerformed(ActionEvent e){
+	 		String path = txtPath.getText();
+	 		System.out.println("path obtained: "+path);
+	 		try{
+	 			
+	 		
+	 		String folder = AccessBookmarks.splitAndExtractPdf(path);
+			Main.runAlgorithm(folder);
+	 		
+			
+	 		}
+	 		catch(Exception ex)
+	 		{
+	 			System.out.println("Something seems to have gone wrong in the execution!");
+	 		}
+	 	}
+	 });
 
+	
 
 	JPanel buttonPanel=new JPanel();
 	buttonPanel.setLayout(null);
