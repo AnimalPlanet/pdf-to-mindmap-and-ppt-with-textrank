@@ -3,7 +3,7 @@
   associations="true" dependencies="true" nesting-relationships="true">  
   <class id="1" language="java" name="com.sharethis.textrank.AccessBookmarks" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/AccessBookmarks.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="241" width="262" x="1208" y="210"/>    
+    <position height="259" width="293" x="65" y="210"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="com.sharethis.textrank.PdfToMindmap" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/PdfToMindmap.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1300" y="85"/>    
+    <position height="97" width="113" x="398" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="com.sharethis.textrank.Main" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="241" width="201" x="967" y="210"/>    
+    <position height="241" width="257" x="398" y="210"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="com.sharethis.textrank.TextRank" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/TextRank.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1073" y="704"/>    
+    <position height="439" width="255" x="633" y="509"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="com.sharethis.textrank.Context" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/Context.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="115" width="130" x="1091" y="1233"/>    
+    <position height="115" width="130" x="748" y="1269"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <class id="6" language="java" name="com.sharethis.textrank.Graph" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/Graph.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="912" y="1780"/>    
+    <position height="259" width="241" x="1015" y="2674"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="com.sharethis.textrank.KeyWord" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/KeyWord.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="133" width="137" x="1288" y="2638"/>    
+    <position height="133" width="137" x="794" y="2393"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -66,7 +66,7 @@
   </class>  
   <class id="8" language="java" name="com.sharethis.textrank.LanguageEnglish" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/LanguageEnglish.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="313" width="183" x="1596" y="2094"/>    
+    <position height="313" width="183" x="1278" y="2040"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -75,7 +75,7 @@
   </class>  
   <class id="9" language="java" name="com.sharethis.textrank.LanguageModel" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/LanguageModel.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="313" width="243" x="1429" y="1741"/>    
+    <position height="313" width="243" x="1072" y="1687"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -84,7 +84,7 @@
   </class>  
   <class id="10" language="java" name="com.sharethis.textrank.LanguageSpanish" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/LanguageSpanish.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="313" width="183" x="1373" y="2094"/>    
+    <position height="313" width="183" x="1055" y="2040"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -93,7 +93,7 @@
   </class>  
   <class id="11" language="java" name="com.sharethis.textrank.MetricVector" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/MetricVector.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="205" width="250" x="42" y="952"/>    
+    <position height="205" width="250" x="320" y="988"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -102,7 +102,7 @@
   </class>  
   <class id="12" language="java" name="com.sharethis.textrank.NGram" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/NGram.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="241" width="338" x="1049" y="952"/>    
+    <position height="241" width="338" x="673" y="988"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -111,7 +111,7 @@
   </class>  
   <class id="13" language="java" name="com.sharethis.textrank.Node" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/Node.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="277" width="227" x="1030" y="2094"/>    
+    <position height="277" width="227" x="652" y="1687"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -120,7 +120,7 @@
   </class>  
   <class id="14" language="java" name="com.sharethis.textrank.NodeValue" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/NodeValue.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="151" width="133" x="520" y="2447"/>    
+    <position height="151" width="133" x="416" y="2040"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -129,7 +129,7 @@
   </class>  
   <class id="15" language="java" name="com.sharethis.textrank.Sentence" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/Sentence.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="223" width="221" x="1091" y="1478"/>    
+    <position height="223" width="221" x="748" y="1424"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -139,7 +139,7 @@
   <enumeration id="16" language="java" name="com.sharethis.textrank.SynsetLink.MyRelation" 
     project="textrank-from-scratch" file="/textrank-from-scratch/src/com/sharethis/textrank/SynsetLink.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="407" y="1278"/>    
+    <position height="133" width="146" x="364" y="2674"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -148,7 +148,7 @@
   </enumeration>  
   <class id="17" language="java" name="com.sharethis.textrank.SynsetLink" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/SynsetLink.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="241" width="263" x="541" y="952"/>    
+    <position height="241" width="263" x="470" y="2393"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -157,7 +157,7 @@
   </class>  
   <class id="18" language="java" name="com.sharethis.textrank.Tester" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/Tester.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="97" width="113" x="438" y="37"/>    
+    <position height="97" width="113" x="43" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -166,7 +166,7 @@
   </class>  
   <class id="19" language="java" name="com.sharethis.textrank.Window" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/Window.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1067" y="101"/>    
+    <position height="133" width="162" x="196" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
@@ -175,326 +175,376 @@
   </class>  
   <class id="20" language="java" name="com.sharethis.textrank.WordNet" project="textrank-from-scratch" 
     file="/textrank-from-scratch/src/com/sharethis/textrank/WordNet.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="205" width="323" x="602" y="1233"/>    
+    <position height="205" width="323" x="652" y="2674"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <dependency id="21">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="10"/>  
+  <class id="21" language="java" name="com.sharethis.textrank.Presentation" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/Presentation.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="133" width="195" x="43" y="988"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.sharethis.textrank.NumberInString" project="textrank-from-scratch" 
+    file="/textrank-from-scratch/src/com/sharethis/textrank/NumberInString.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="133" width="168" x="65" y="509"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <nesting id="23">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="16"/>  
+  </nesting>  
+  <generalization id="24">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="14"/>  
+  </generalization>  
+  <dependency id="25">    
+    <bendpoint x="600" y="988"/>    
+    <bendpoint x="594" y="1269"/>    
+    <bendpoint x="587" y="1424"/>    
+    <bendpoint x="579" y="1687"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
   </dependency>  
-  <association id="22">    
+  <association id="26">    
+    <bendpoint x="377" y="1269"/>    
+    <bendpoint x="377" y="1424"/>    
+    <bendpoint x="377" y="1687"/>    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="27" name="value"/>      
+      <multiplicity id="28" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="29">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="14"/>  
+  </generalization>  
+  <association id="31">    
+    <bendpoint x="684" y="1269"/>    
+    <bendpoint x="684" y="1424"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="32" name="nodes"/>      
+      <multiplicity id="33" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="35" name="node_list"/>      
+      <multiplicity id="36" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="37">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <association id="38">    
+    <bendpoint x="1512" y="988"/>    
+    <bendpoint x="1512" y="1269"/>    
+    <bendpoint x="1512" y="1424"/>    
+    <bendpoint x="1512" y="1687"/>    
+    <bendpoint x="1512" y="2040"/>    
+    <bendpoint x="1512" y="2393"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="39" name="ngram_subgraph"/>      
+      <multiplicity id="40" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="41">    
+    <bendpoint x="263" y="509"/>    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="42" name="ppt"/>      
+      <multiplicity id="43" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="44">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="45">    
+    <bendpoint x="1041" y="1269"/>    
+    <bendpoint x="1041" y="1424"/>    
+    <bendpoint x="1041" y="1687"/>    
+    <bendpoint x="1024" y="2040"/>    
+    <bendpoint x="1024" y="2393"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="46">    
+    <bendpoint x="1062" y="988"/>    
+    <bendpoint x="1062" y="1269"/>    
+    <bendpoint x="1020" y="1424"/>    
+    <bendpoint x="1020" y="1687"/>    
+    <bendpoint x="982" y="2040"/>    
+    <bendpoint x="961" y="2393"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="47">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="48">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="49">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="50" name="s"/>      
+      <multiplicity id="51" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="52">    
+    <bendpoint x="1041" y="988"/>    
+    <bendpoint x="1020" y="1269"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="53" name="s_list"/>      
+      <multiplicity id="54" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="55">    
+    <bendpoint x="289" y="988"/>    
+    <bendpoint x="289" y="1269"/>    
+    <bendpoint x="289" y="1424"/>    
+    <bendpoint x="289" y="1687"/>    
+    <bendpoint x="289" y="2040"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <generalization id="56">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <dependency id="57">    
+    <bendpoint x="999" y="1687"/>    
+    <bendpoint x="1003" y="2040"/>    
+    <bendpoint x="1003" y="2393"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <generalization id="58">    
+    <bendpoint x="663" y="1269"/>    
+    <bendpoint x="642" y="1424"/>    
+    <bendpoint x="600" y="1687"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </generalization>  
+  <dependency id="59">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="60">    
+    <bendpoint x="999" y="1269"/>    
+    <bendpoint x="999" y="1424"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="61">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="62">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="63">    
     <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="23" name="relation"/>      
-      <multiplicity id="24" minimum="0" maximum="1"/>    
+      <attribute id="64" name="relation"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="16" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="25">    
-    <bendpoint x="997" y="1233"/>    
-    <bendpoint x="955" y="1478"/>    
-    <bendpoint x="737" y="1741"/>    
-    <bendpoint x="737" y="2094"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="14"/>  
-  </generalization>  
-  <generalization id="26">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="14"/>  
-  </generalization>  
-  <association id="27">    
-    <bendpoint x="1081" y="1741"/>    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="28" name="node_list"/>      
-      <multiplicity id="29" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="30">    
-    <bendpoint x="1297" y="1741"/>    
-    <bendpoint x="1297" y="2094"/>    
-    <bendpoint x="1297" y="2447"/>    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <dependency id="31">    
-    <bendpoint x="1039" y="1233"/>    
-    <bendpoint x="1018" y="1478"/>    
-    <end type="SOURCE" refId="12"/>    
+  <dependency id="66">    
+    <bendpoint x="763" y="2040"/>    
+    <bendpoint x="763" y="2393"/>    
+    <end type="SOURCE" refId="13"/>    
     <end type="TARGET" refId="6"/>  
   </dependency>  
-  <dependency id="32">    
-    <bendpoint x="510" y="952"/>    
+  <dependency id="67">    
+    <bendpoint x="621" y="988"/>    
+    <bendpoint x="621" y="1269"/>    
+    <bendpoint x="621" y="1424"/>    
+    <bendpoint x="621" y="1687"/>    
+    <bendpoint x="621" y="2040"/>    
     <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="16"/>  
+    <end type="TARGET" refId="7"/>  
   </dependency>  
-  <association id="33">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="34" name="metric_space"/>      
-      <multiplicity id="35" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="36">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="3"/>  
+  <dependency id="68">    
+    <bendpoint x="642" y="988"/>    
+    <bendpoint x="642" y="1269"/>    
+    <bendpoint x="663" y="1424"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
   </dependency>  
-  <dependency id="37">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <generalization id="38">    
+  <generalization id="69">    
     <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="9"/>  
   </generalization>  
-  <dependency id="39">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <association id="40">    
-    <bendpoint x="1459" y="952"/>    
-    <bendpoint x="1459" y="1233"/>    
-    <bendpoint x="1459" y="1478"/>    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="41" name="lang"/>      
-      <multiplicity id="42" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="43">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="44" name="node_list"/>      
-      <multiplicity id="45" minimum="0" maximum="2147483647"/>    
+  <association id="70">    
+    <bendpoint x="1189" y="2410"/>    
+    <bendpoint x="1243" y="2410"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="71" name="edges"/>      
+      <multiplicity id="72" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="46">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="20"/>  
-  </dependency>  
-  <dependency id="47">    
-    <bendpoint x="834" y="952"/>    
+  <dependency id="73">    
+    <bendpoint x="268" y="988"/>    
+    <bendpoint x="268" y="1269"/>    
+    <bendpoint x="268" y="1424"/>    
+    <bendpoint x="268" y="1687"/>    
+    <bendpoint x="268" y="2040"/>    
+    <bendpoint x="268" y="2393"/>    
     <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="20"/>  
+    <end type="TARGET" refId="16"/>  
   </dependency>  
-  <dependency id="48">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="49">    
-    <bendpoint x="1809" y="952"/>    
-    <bendpoint x="1809" y="1233"/>    
-    <bendpoint x="1809" y="1478"/>    
-    <bendpoint x="1809" y="1741"/>    
-    <bendpoint x="1809" y="2094"/>    
-    <bendpoint x="1809" y="2447"/>    
-    <end type="SOURCE" refId="4"/>    
+  <dependency id="74">    
+    <bendpoint x="717" y="1269"/>    
+    <bendpoint x="717" y="1424"/>    
+    <bendpoint x="919" y="1687"/>    
+    <bendpoint x="919" y="2040"/>    
+    <end type="SOURCE" refId="12"/>    
     <end type="TARGET" refId="7"/>  
   </dependency>  
-  <dependency id="50">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="12"/>  
+  <dependency id="75">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="10"/>  
   </dependency>  
-  <dependency id="51">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <association id="52">    
+  <association id="76">    
     <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="53" name="value"/>      
-      <multiplicity id="54" minimum="0" maximum="1"/>    
+      <attribute id="77" name="value"/>      
+      <multiplicity id="78" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="14" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="55">    
-    <bendpoint x="1060" y="1233"/>    
-    <bendpoint x="1060" y="1478"/>    
-    <bendpoint x="1060" y="1741"/>    
+  <association id="79">    
     <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="56" name="nodes"/>      
-      <multiplicity id="57" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="58">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="9"/>  
-  </generalization>  
-  <association id="59">    
-    <bendpoint x="976" y="952"/>    
-    <bendpoint x="976" y="1233"/>    
-    <bendpoint x="976" y="1478"/>    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="60" name="graph"/>      
-      <multiplicity id="61" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="62">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="63" name="contexts"/>      
-      <multiplicity id="64" minimum="0" maximum="2147483647"/>    
+      <attribute id="80" name="contexts"/>      
+      <multiplicity id="81" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="65">    
+  <dependency id="82">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="83">    
+    <bendpoint x="579" y="2040"/>    
     <end type="SOURCE" refId="13"/>    
     <end type="TARGET" refId="17"/>  
   </dependency>  
-  <dependency id="66">    
-    <bendpoint x="1438" y="1233"/>    
-    <bendpoint x="1438" y="1478"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="9"/>  
+  <dependency id="84">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="20"/>  
   </dependency>  
-  <association id="67">    
-    <bendpoint x="290" y="1233"/>    
-    <bendpoint x="290" y="1478"/>    
-    <bendpoint x="290" y="1741"/>    
-    <bendpoint x="290" y="2094"/>    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="68" name="value"/>      
-      <multiplicity id="69" minimum="0" maximum="1"/>    
+  <association id="85">    
+    <bendpoint x="600" y="2040"/>    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="86" name="parent"/>      
+      <multiplicity id="87" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
+    <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="70">    
-    <bendpoint x="955" y="952"/>    
-    <bendpoint x="955" y="1233"/>    
-    <bendpoint x="934" y="1478"/>    
+  <association id="88">    
+    <bendpoint x="982" y="2393"/>    
+    <bendpoint x="961" y="2040"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="89" name="node_list"/>      
+      <multiplicity id="90" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="91">    
+    <bendpoint x="908" y="1269"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="92">    
+    <bendpoint x="784" y="2040"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="93">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="94">    
+    <bendpoint x="1083" y="988"/>    
+    <bendpoint x="1083" y="1269"/>    
+    <bendpoint x="1083" y="1424"/>    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="71" name="ngram_subgraph"/>      
-      <multiplicity id="72" minimum="0" maximum="1"/>    
+      <attribute id="95" name="lang"/>      
+      <multiplicity id="96" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="97">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="98" name="metric_space"/>      
+      <multiplicity id="99" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="100">    
+    <bendpoint x="940" y="1687"/>    
+    <bendpoint x="940" y="2040"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="101">    
+    <bendpoint x="1491" y="988"/>    
+    <bendpoint x="1491" y="1269"/>    
+    <bendpoint x="1491" y="1424"/>    
+    <bendpoint x="1491" y="1687"/>    
+    <bendpoint x="1491" y="2040"/>    
+    <bendpoint x="1491" y="2393"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="102" name="graph"/>      
+      <multiplicity id="103" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="73">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="74" name="s"/>      
-      <multiplicity id="75" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="76">    
-    <bendpoint x="322" y="952"/>    
-    <bendpoint x="322" y="1233"/>    
-    <bendpoint x="322" y="1478"/>    
-    <bendpoint x="322" y="1741"/>    
-    <bendpoint x="322" y="2094"/>    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="14"/>  
-  </dependency>  
-  <dependency id="77">    
+  <dependency id="104">    
     <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="TARGET" refId="3"/>  
   </dependency>  
-  <dependency id="78">    
-    <bendpoint x="1342" y="1233"/>    
-    <bendpoint x="1342" y="1478"/>    
-    <bendpoint x="1342" y="1741"/>    
-    <bendpoint x="1342" y="2094"/>    
-    <bendpoint x="1342" y="2447"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <dependency id="79">    
-    <bendpoint x="1168" y="2447"/>    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <association id="80">    
-    <bendpoint x="1417" y="952"/>    
-    <bendpoint x="1417" y="1233"/>    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="81" name="s_list"/>      
-      <multiplicity id="82" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="83">    
-    <bendpoint x="1018" y="952"/>    
-    <bendpoint x="1018" y="1233"/>    
-    <bendpoint x="1039" y="1478"/>    
-    <bendpoint x="1039" y="1741"/>    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="13"/>  
-  </dependency>  
-  <association id="84">    
-    <bendpoint x="550" y="1233"/>    
-    <bendpoint x="550" y="1478"/>    
-    <bendpoint x="550" y="1741"/>    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="85" name="parent"/>      
-      <multiplicity id="86" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="87">    
-    <bendpoint x="1189" y="2410"/>    
-    <bendpoint x="1243" y="2410"/>    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="88" name="edges"/>      
-      <multiplicity id="89" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="90">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="17"/>  
-  </dependency>  
-  <dependency id="91">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <dependency id="92">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <dependency id="93">    
-    <bendpoint x="571" y="1233"/>    
-    <bendpoint x="571" y="1478"/>    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <dependency id="94">    
-    <bendpoint x="1251" y="1233"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="15"/>  
-  </dependency>  
-  <generalization id="95">    
-    <bendpoint x="529" y="1233"/>    
-    <bendpoint x="529" y="1478"/>    
-    <bendpoint x="529" y="1741"/>    
-    <bendpoint x="529" y="2094"/>    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="14"/>  
-  </generalization>  
-  <dependency id="96">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
-  <nesting id="97">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="16"/>  
-  </nesting>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true"/>    

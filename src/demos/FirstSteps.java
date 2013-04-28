@@ -66,11 +66,17 @@ public void addBullet() throws Exception
 	Slide slide1 = slideShow.createSlide();
 	  TextBox shape = new TextBox();
 	  RichTextRun rt = shape.getTextRun().getRichTextRuns()[0];
-	  shape.setText(
-	          "Prongs\r" +
-	          "Padfoot\r" +
-	          "Moony\r" +
-	          "Wormtail");
+	  String[] ip = {"Prongs\r" ,
+	          "Padfoot\r" ,
+	          "Moony\r" ,
+	          "Wormtail"};
+	  
+	  String str = "";
+	  for (int i = 0; i< ip.length;i++)
+		str = str + ip[i];
+	  System.out.println(str);
+	  
+	  shape.setText( str );
 	  rt.setFontSize(42);
 	  rt.setBullet(true);
 	  rt.setBulletOffset(0);  //bullet offset

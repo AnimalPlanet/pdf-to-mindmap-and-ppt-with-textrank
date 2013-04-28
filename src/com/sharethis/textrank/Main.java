@@ -33,7 +33,7 @@ public class Main {
 	public static void initialize(String path,String nameOfPpt) throws IOException
 	{
 		
-		output_file = new File("/home/lekha/Documents/"+nameOfPpt+".mm");//(path + "\\output.mm");
+		output_file = new File("/home/lekha/Documents/output/"+nameOfPpt+".mm");//(path + "\\output.mm");
 		writer = new FileWriter(output_file);
 		System.out.println("Path obtained:"+path);
 		writer.write("<map version=\"0.9.0\">");
@@ -77,7 +77,8 @@ public class Main {
 					System.out.println("directory found: "+directoryName);
 					writer.write("<node text=\""+directoryName+"\">"); //position=\""+position+"\">");
 					//position = (position.equals("right")?"left":"right");
-					traverseFileSystem(currentPath+"/"+folderContents[i].getName(),name+"\n"+directoryName,nameOfPpt);
+					
+					traverseFileSystem(currentPath+"/"+folderContents[i].getName(),name+" "+directoryName,nameOfPpt);
 					writer.write("</node>");
 				}
 				else
@@ -113,7 +114,7 @@ public class Main {
 		   String end = filename.substring(l-4);
 		   String nameWithoutExtn=filename.substring(0, l-4);
 		  // name=name+":"+nameWithoutExtn;
-		   ppt.createSlideShow(name+" "+nameWithoutExtn,nameOfPpt);
+		   ppt.createSlideShow(name+" "+nameWithoutExtn.substring(2),nameOfPpt);
 		   if(end.equalsIgnoreCase(".txt"))
 		   {
 			   System.out.println("Textfile. Running algorithm on it...");
@@ -158,7 +159,7 @@ public class Main {
 				" It separately runs textrank on each txt file and outputs mindmap style xml maintaining folders tree structure."+
 				"\nEnter path:");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		path = "/home/lekha/Documents/pdfs/Electronic Commerce";//br.readLine();
+		path = "/home/lekha/Documents/pdfs/Android Application Development For Dummies";//br.readLine();
 		
 		
 		runAlgorithm(path);
@@ -174,7 +175,7 @@ public class Main {
 		nameOfPpt=temp[total-1];
 		initialize(path,nameOfPpt);
 		traverseFileSystem(path,ip,nameOfPpt);
-		terminateAndLaunchFreemind("/home/lekha/Documents/"+nameOfPpt+".mm");
+		terminateAndLaunchFreemind("/home/lekha/Documents/output/"+nameOfPpt+".mm");
 		
 	}
 	

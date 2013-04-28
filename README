@@ -101,3 +101,7 @@ just run main.java and the .ppt file will be created and stored in the project f
 24)removed 2 digit count prepended to file and folder names before using the names in mindmap and ppt
 25)added button listener for ok and linked new GUI to backend code
 
+
+---
+
+26) presentation bug fixed(less than 10 keywords set is not being truncated anymore)

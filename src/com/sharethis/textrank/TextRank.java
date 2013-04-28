@@ -460,7 +460,7 @@ public class
 	    	//sb.append(mv.render()).append("\t").append(mv.value.text).append("\n");    
 	    	String keyword = mv.value.text;
 	    	keyword = StringEscapeUtils.escapeXml(keyword);
-	    	keywordGroup=keywordGroup +":"+keyword;
+	    	keywordGroup=keywordGroup +"\r"+keyword;
 	    	i++;
 	    	if (i==10)
 	    	{
@@ -473,6 +473,13 @@ public class
 	    	}
 	    	sb.append("<node text=\"").append(keyword).append("\"/>").append("\n");
 	    }
+	}
+	if(!keywordGroup.equals(""))
+	{
+		try{
+		ppt.addBulletPoints(keywordGroup, nameOfPpt);
+		keywordGroup="";
+		}catch(Exception e){};
 	}
 
 	return sb.toString();

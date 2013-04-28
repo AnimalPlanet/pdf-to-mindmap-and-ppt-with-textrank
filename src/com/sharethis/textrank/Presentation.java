@@ -33,7 +33,7 @@ public class Presentation {
 		
 		
 		//the following are the 'Ctrl+S' steps for the presentation file 
-		FileOutputStream out = new FileOutputStream("/home/lekha/Documents/"+nameOfPpt);   
+		FileOutputStream out = new FileOutputStream("/home/lekha/Documents/output/"+nameOfPpt);   
 		   slideShow.write(out);
 		   out.close();
 		
@@ -47,25 +47,26 @@ public class Presentation {
 	
 	public void addBulletPoints(String bullets,String nameOfPpt) throws Exception
 	{
-	String [] bullet= bullets.split(":");	//input is a string of ten keywords separated by a : 
-	
+	/*
+		String [] bullet= bullets.split(":");	//input is a string of ten keywords separated by a : 
+	*/
 	Slide slide1 = slideShow.createSlide();
 	 
 	nameOfPpt=nameOfPpt+".ppt";
 	  
 	  TextBox shape = new TextBox();
 	  RichTextRun rt = shape.getTextRun().getRichTextRuns()[0];
-	  shape.setText(
-	          bullet[0] +
-	          bullet[1]+"\r" +
-	          bullet[2]+"\r" +
-	          bullet[3]+"\r" +
-	          bullet[4]+"\r" +
-	          bullet[5]+"\r" +
-	          bullet[6]+"\r" +
-	          bullet[7]+"\r" +
-	          bullet[8]+"\r" +
-	          bullet[9]);
+	  
+	  /*
+	  String str = "";
+	  for (int i = 1 ; i < bullet.length ; i++)
+	  {
+		  str = str + bullet[i] + "\r";
+	  }
+	  System.out.println(str);
+	  */
+	  System.out.println(bullets);
+	  shape.setText(bullets);
 	  rt.setFontSize(42);
 	  rt.setBullet(true);
 	  rt.setBulletOffset(0);  //bullet offset
@@ -81,7 +82,7 @@ public class Presentation {
 
 	//the following are the 'Ctrl+S' steps for the presentation file named slideshow.ppt
 
-	FileOutputStream out = new FileOutputStream("/home/lekha/Documents/"+nameOfPpt);   
+	FileOutputStream out = new FileOutputStream("/home/lekha/Documents/output/"+nameOfPpt);   
 	   slideShow.write(out);
 	   out.close();
 	}

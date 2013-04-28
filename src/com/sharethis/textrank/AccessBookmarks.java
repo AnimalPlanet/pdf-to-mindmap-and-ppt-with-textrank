@@ -90,6 +90,11 @@ public class AccessBookmarks {
 			
 			outputFilename = outputFilename.replace(',', ' ');
 			outputFilename = outputFilename.replace('/', ' ');
+			outputFilename = outputFilename.replace('-', ' ');
+			outputFilename = outputFilename.replace(':', ' ');
+			outputFilename = outputFilename.replace(';', ' ');
+			outputFilename = outputFilename.replace('"', ' ');
+			outputFilename = outputFilename.replace('\'', ' ');
 			
 			
 			//code to be replaced ends here
