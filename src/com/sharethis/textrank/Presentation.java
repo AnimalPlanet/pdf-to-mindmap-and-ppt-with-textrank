@@ -65,16 +65,15 @@ public class Presentation {
 	  }
 	  System.out.println(str);
 	  */
-	  System.out.println(bullets);
-	  shape.setText(bullets);
-	  rt.setFontSize(42);
+	  	  shape.setText(bullets);
+	  rt.setFontSize(28);
 	  rt.setBullet(true);
 	  rt.setBulletOffset(0);  //bullet offset
 	  rt.setTextOffset(50);   //text offset (should be greater than bullet offset)
 	  rt.setBulletChar('\u2022'); //bullet character
 	  slide1.addShape(shape);
 
-	  shape.setAnchor(new java.awt.Rectangle(50, 50, 500, 300));  //position of the text box in the slide
+	  shape.setAnchor(new java.awt.Rectangle(50, 20, 500, 300));  //position of the text box in the slide
 	  slide1.addShape(shape);
 	
 	HeadersFooters hdd = slideShow.getSlideHeadersFooters();

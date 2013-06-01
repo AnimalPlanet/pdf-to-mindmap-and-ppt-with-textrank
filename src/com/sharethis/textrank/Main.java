@@ -1,12 +1,12 @@
 package com.sharethis.textrank;
 
+import java.awt.Desktop;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Comparator;
 
 //import org.apache.poi.hslf.model.Slide;
 //import org.apache.poi.hslf.model.TextBox;
@@ -39,7 +39,7 @@ public class Main {
 		writer.write("<map version=\"0.9.0\">");
 		
 		writer.write("<node text=\""+inputPath.substring(inputPath.lastIndexOf('/') + 1)+"\">");
-		System.out.println("hello");
+		
 		
 	}
 	
@@ -65,7 +65,7 @@ public class Main {
 			//String position = "right";
 			//iterate through contents of folder
 			for(int i=0; i<folderContents.length;i++)
-			{System.out.println(folderContents[i].lastModified());
+			{
 				if (folderContents[i].isDirectory())
 				{
 					//recursive call if another folder found
@@ -152,9 +152,15 @@ public class Main {
 	public static void launchFreemind(String pathOfMindmap) throws IOException
 	{
 		
-		
 		Process p = new ProcessBuilder("freemind",pathOfMindmap).start();
-		System.out.println("Done!");
+		System.out.println("Done launching freemind!");
+		
+	}
+	public static void launchPpt(String pathofppt) throws IOException
+	{
+		
+		Process p = new ProcessBuilder("libreoffice",pathofppt).start();
+		System.out.println("Done launching ppt!");
 		
 	}
 	
@@ -165,7 +171,7 @@ public class Main {
 				" It separately runs textrank on each txt file and outputs mindmap style xml maintaining folders tree structure."+
 				"\nEnter path:");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		path = "/home/lekha/Documents/pdfs/Android Application Development For Dummies";//br.readLine();
+		path = "/home/lekha/Documents/pdfs/Algorithms in a Nutshell";//br.readLine();
 		
 		
 		runAlgorithm(path);
@@ -186,7 +192,7 @@ public class Main {
 		String ip="";
 		traverseFileSystem(inputPath,ip,nameOfPpt);
 		terminate();
-		launchFreemind(inputPath+".mm");
+		//launchFreemind(inputPath+".mm");
 		
 	}
 	

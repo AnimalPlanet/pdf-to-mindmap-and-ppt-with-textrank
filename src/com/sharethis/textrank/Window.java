@@ -8,6 +8,9 @@ import java.awt.event.ActionListener;
 public class Window {
 	
 	String folder = null ;
+	
+	JButton  ppt;
+	JButton mindMap;
 	public JPanel createContentPane(){
 	JPanel p=new JPanel();
 	//p.setBackground(Color.CYAN);
@@ -85,10 +88,12 @@ public class Window {
 	 		System.out.println("path obtained: "+path);
 	 		try{
 	 			
-	 		
+	 		//disableButtons();
 	 		folder = AccessBookmarks.splitAndExtractPdf(path);
-	 		System.out.println(folder);
+	 		System.out.println("folder name:"+folder);
 			Main.runAlgorithm(folder);
+			//enableButtons();
+			
 	 		
 			
 	 		}
@@ -109,7 +114,7 @@ public class Window {
 	p.add(buttonPanel);
 	
 	
-	JButton mindMap= new JButton("MindMap");	
+	mindMap= new JButton("MindMap");	
 	mindMap.setLocation(60,10);
 	mindMap.setSize(152,50);
 	Icon imgicona =new ImageIcon("Freemind1.png");
@@ -118,8 +123,6 @@ public class Window {
 	
 	mindMap.addActionListener(new ActionListener(){
 	 	public void actionPerformed(ActionEvent e){
-	 		String path = txtPath.getText();
-	 		//System.out.println("path obtained: "+path);
 	 		try{
 	 			
 	 		if(folder != null){
@@ -138,7 +141,7 @@ public class Window {
 	 	}
 	 });
 	
-	JButton ppt= new JButton("Presentation");	
+	ppt= new JButton("Presentation");	
 	ppt.setLocation(285,10);
 	ppt.setSize(152,50);
 	Icon imgiconb =new ImageIcon("ofppt.png");
@@ -146,6 +149,25 @@ public class Window {
 	buttonPanel.add(ppt);	
 	
 	
+	ppt.addActionListener(new ActionListener(){
+	 	public void actionPerformed(ActionEvent e){
+	 		try{
+	 			
+	 		if(folder != null){
+	 		Main.launchPpt(folder+".ppt");
+	 		}
+	 		else
+	 		{
+	 			//error
+	 		}
+			
+	 		}
+	 		catch(Exception ex)
+	 		{
+	 			System.out.println("Something seems to have gone wrong in the execution!");
+	 		}
+	 	}
+	 });
 	
 	JPanel bottomPanel=new JPanel();
 	buttonPanel.setLayout(null);
@@ -155,13 +177,7 @@ public class Window {
 	p.add(bottomPanel);
 	
 	
-	String help="<html><center><h1>--HELP--</h1></center>"+
-		"<h4>Browse-->Helps You to browse through"
-		+"the directory to select a file<br>"+
-		"Ok-->Generated the  keywords<br>"+
-		"MindMap---->Displays Mindmap of the extracted Keywords<br>"+
-		"Presentation----->Creates a PowerPoint Presentation"+ 
-			"Of the extracted keywords<h4><br></html>"; 
+	String help="<html><br><br><br>Click BROWSE. <br>Select an ebook(.pdf format). <br>Click OK. <br>Wait for the execution. <br>Click MINDMAP or PRESENTATION to view your output.</html>"; 
 	
 	bottomPanel.add(new JLabel (help));
 	
@@ -170,6 +186,17 @@ p.setOpaque(true);
 return p;
 }	
 	
+	
+	public void disableButtons()
+	{
+	ppt.setEnabled(false);
+	mindMap.setEnabled(false);
+	}
+	public void enableButtons()
+	{
+		ppt.setEnabled(true);
+		mindMap.setEnabled(true);
+	}
 	
 public static void main(String[] args){
 	
