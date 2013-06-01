@@ -1,13 +1,15 @@
-This project contains modifications to open source textrank implementation for a project.
+pdf to mindmap and presentation conversion using textrank keyword extraction algorithm.
 
-To run it, compile using eclipse, and run the TextRank.java file. 
+To run it, import project in eclipse, add all jars in lib folder to classpath, compile using eclipse, and run the TextRank.java file. 
 You must give path of a .txt file as command line argument which is the source file on which textrank algorithm will be run.
 
 Alternatively you can run Main.java file.
 give path of a folder as input
--------------------------------------------------------------------
 
-Modifications made to original source so far:
+To run the entire tool GUI et. al. run the Window.java class.
+-------------------------------------------------------------------
+Log:Step by step modifications made to original textrank source code ( found at https://github.com/samxhuan/textrank)
+
 
 1) TextRank.java main method. All command line arguments changed to hardcoded ones(except source file)
 2) Added Main.java file. input is a path taken from console. recursively traverses the directory structure 
@@ -114,3 +116,4 @@ just run main.java and the .ppt file will be created and stored in the project f
 
 ---
  
+ 29) help of gui improved
